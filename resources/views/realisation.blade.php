@@ -78,7 +78,7 @@
                             <span>14, May 2021</span>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, quos! Pariatur ipsum aperiam alias distinctio vel molestiae id. Aut atque sequi eius omnis et? Nesciunt blanditiis incidunt.</p>
 
-                            <a href="blog-details.html" class="read-more">Reply</a>
+                            <button data-toggle="modal" data-target="#exampleModalCenter" class="read-more">Répondre</button>
                         </li>
 
                         <li class="margin-left">
@@ -101,42 +101,42 @@
                     </ul>
 
                     <div class="leave-reply">
-                        <h3>Leave A Reply</h3>
+                        <h3>Laisser un commentaire</h3>
 
-                        <form>
-                            <p>Your email address will not be published. Required fields are marked*</p>
+                        <form method="post" action="{{route('comment.add')}}">
+                            @csrf
+
+                            <input type="hidden" name="postId">
+                            
+                            <p>
+                                Votre adresse e-mail ne sera pas publiée. <br>
+                                Les champs obligatoires sont marqués par (*)
+                            </p>
                             <div class="row">
                                 <div class="col-lg-6 col-sm-6">
                                     <div class="form-group">
-                                        <label>Name*</label>
-                                        <input type="text" name="name" id="name" class="form-control">
+                                        <label>Nom *</label>
+                                        <input type="text" name="nom" class="form-control">
                                     </div>
                                 </div>
     
                                 <div class="col-lg-6 col-sm-6">
                                     <div class="form-group">
                                         <label>Email*</label>
-                                        <input type="email" name="email" id="email" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label>Your Website Link</label>
-                                        <input type="text" name="website" id="website" class="form-control">
+                                        <input type="email" name="mail" class="form-control">
                                     </div>
                                 </div>
     
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <label>Comment</label>
-                                        <textarea name="message" class="form-control" id="message" rows="8"></textarea>
+                                        <label>Commentaire</label>
+                                        <textarea name="comment" class="form-control" rows="8"></textarea>
                                     </div>
                                 </div>
     
                                 <div class="col-lg-12 col-md-12">
                                     <button type="submit" class="default-btn">
-                                        Post a comment
+                                        Poster le commentaire
                                     </button>
                                 </div>
                             </div>
@@ -246,5 +246,28 @@
 </section>
 <!-- End Blog Page Area -->
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 @endsection

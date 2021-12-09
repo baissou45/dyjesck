@@ -3,6 +3,7 @@
 use App\Http\Controllers\RouteController;
 use App\Http\Controllers\PostController;
 use App\Http\CommentControlle;
+use App\Http\Controllers\CommentController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -34,7 +35,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('accueil', [RouteController::class, 'accueuil'])->name('accueil');
 Route::get('contact', [RouteController::class, 'contact'])->name('contact');
 Route::get('realisations', [RouteController::class, 'realisations'])->name('realisations');
-Route::get('realisations/{slug}', [RouteController::class, 'realisation'])->name('realisations.index');
+Route::get('realisations/{slug}', [RouteController::class, 'realisation'])->name('realisations.show');
 Route::get('apropos', [RouteController::class, 'apropos'])->name('apropos');
 
 Route::get('post', [PostController::class, 'create'])->name('post.create');

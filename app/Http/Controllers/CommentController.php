@@ -5,23 +5,53 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class CommentController extends Controller
 {
     //
-    public function store(Request $request)
-    {
-        $comment = new Comment;
+    public function store(Request $request){
 
-        $comment->comment = $request->comment;
+        // dd($request->all(), $request->commentaire_id);
 
-        $comment->user()->associate($request->user());
+        $validator = Validator::make($request->all(), [
+            'nom' => 'required|min:10',
+            'mail' => 'required',
+            'comment' => 'required'
+        ],[
+            'required' => 'Ce champ est obligatoir',
+            'min' => 'Le contenu de ce champ est trop court'
+        ]);
 
-        $post = Post::find($request->post_id);
+        if ($validator->fails()) {
+            dd($validator);
+            return redirect()->back()->withErrors($validator)->withInput();
+        } else {
 
-        $post->comments()->save($comment);
+            Comment::create([
 
-        return back();
+                'nom' => $request->nom,
+                'mail' => $request->mail,
+                'comment' => $request->comment,
+                'post_id' => $request->post_id,
+                'commentaire_id' => $request->commentaire_id,
+                
+            ]);
+            
+        }
+        
+        
+        // $comment = new Comment;
+
+        // $comment->comment = $request->comment;
+
+        // $comment->user()->associate($request->user());
+
+        // $post = Post::find($request->post_id);
+
+        // $post->comments()->save($comment);
+
+        // return back();
     }
 
     public function reponseStore(Request $request)

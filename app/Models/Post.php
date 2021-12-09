@@ -9,12 +9,23 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Post extends Model
 {
     use HasFactory;
-
     use SoftDeletes;
 
+    protected $fillable = [
+        'titre',
+        'description',
+        'epingle',
+        'user_id',
+        'date',
+        'categ',
+        'slug',
+        'img',
+        'img4',
+        'img2',
+        'img3',        
+    ];
+    
     protected $dates = ['deleted_at'];
-
-    protected $guarded = [];
 
     public function user()    {
         return $this->belongsTo(User::class);

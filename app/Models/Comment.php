@@ -9,12 +9,20 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Comment extends Model
 {
     use HasFactory;
-
     use SoftDeletes;
+
+    protected $fillable = [
+
+        'nom',
+        'mail',
+        'comment',
+        'post_id',
+        'commentaire_id',
+        
+    ];
 
     protected $dates = ['deleted_at'];
 
-    protected $guarded = [];
 
     public function user(){
         return $this->belongsTo(User::class);
