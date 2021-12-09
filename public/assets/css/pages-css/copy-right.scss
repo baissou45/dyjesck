@@ -1,0 +1,35 @@
+/*
+Copy Right Area Style
+======================================================*/
+.bg-color-1f242e {
+	background-color: #1f242e;
+}
+.copy-right-area {
+	border-top: 1px solid #363a43;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    text-align: center;
+	p {
+		color: var(--white-color);
+		i {
+			position: relative;
+			top: 2px;
+		}
+		a {
+			color: var(--main-color);
+			font-weight: 600;
+			&:hover {
+				color: var(--main-color);
+			}
+		}
+	}
+	&.copy-right-area-style-two {
+		border-top: 1px solid #3e3c7d;
+		p {
+			color: #8c9cb1;
+			a {
+				color: var(--main-color);
+			}
+		}
+	}
+}

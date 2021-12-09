@@ -1,0 +1,140 @@
+/*
+FAQ Area CSS
+======================================================*/
+.faq-area {
+    position: relative;
+    z-index: 1;
+    .shape {
+        position: absolute;
+        z-index: -1;
+        &.faq-shape-1 {
+            top: 0;
+            left: 0;
+        }
+        &.faq-shape-2 {
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+.faq-content {
+    border-top: 1px solid #e9e4f9;
+}
+.faq-accordion {
+	max-width: 930px;
+	margin: auto;
+	position: relative;
+	z-index: 1;
+	.shape {
+		position: absolute;
+		z-index: -1;
+		&.shape-1 {
+			left: -50px;
+			top: -100px;
+		}
+		&.shape-2 {
+			right: -50px;
+			bottom: -50px;
+		}
+	}
+	.accordion {
+		list-style-type: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		.accordion-item {
+			border-radius: 5px;
+			display: block;
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.accordion-title {
+			padding: 20px 60px 17px 30px;
+			color: var(--heading-color);
+			text-decoration: none;
+			position: relative;
+			display: block;
+			font-size: 18px;
+			font-weight: 700;
+			background: linear-gradient(to right, #f7f7ff, #f0f8ff);
+			z-index: 1;
+			font-family: var(--heading-font-family);
+			i {
+				position: absolute;
+				right: 7px;
+				top: 7px;
+				font-size: 20px;
+				transition: var(--transition);
+				background-color: var(--white-color);
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+			}
+		}
+		.accordion-title {
+			&.active {
+				i {
+					transform: rotate(180deg);
+					background-image: linear-gradient(to right, #f21d56, #f29422);
+					color: var(--white-color);
+					&::before {
+						content: "\f1af";
+					}
+				}
+			}
+		}
+		.accordion-content {
+			display: none;
+			position: relative;
+			margin-top: -6px;
+			padding: 30px;
+			background-color: var(--white-color);
+            border-radius: 0 0 15px 15px;
+		}
+		.accordion-content.show {
+			display: block;
+		}
+	}
+}
+.faq-img {
+	position: relative;
+	z-index: 1;
+	.faq-img-shape {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		margin: auto;
+		z-index: -1;
+	}
+}
+.faq-accordion .accordion .accordion-content {
+	padding-bottom: 15px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .faq-accordion {
+        .accordion {
+            .accordion-title {
+                padding: 20px 60px 17px 15px;
+				font-size: 17px;
+                i {
+                    right: 15px;
+                }
+            }
+            .accordion-content {
+                padding: 15px;
+            }
+        }
+    }
+	.faq-accordion .accordion .accordion-title i {
+		top: 18px;
+		right: 8px;
+	}
+
+}

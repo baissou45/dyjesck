@@ -1,0 +1,136 @@
+.single-pricing-card {
+    margin-bottom: 30px;
+    h3 {
+        font-size: 24px;
+        background-color: var(--main-color);
+        text-align: center;
+        color: var(--white-color);
+        padding: 20px;
+        margin-bottom: 0;
+        span {
+            font-weight: normal;
+            font-size: 18px;
+        }
+    }
+    &.bg-color {
+        h3 {
+            background-color: var(--optional-color);
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li {
+            padding: 15px 20px;
+            font-size: 16px;
+            color: var(--heading-color);
+            span {
+                float: right;
+            }
+            &:nth-child(1) {
+                background-color: #f0f2f9;
+            }
+            &:nth-child(2) {
+                background-color: #f8faff;
+            }
+            &:nth-child(3) {
+                background-color: #f0f2f9;
+            }
+            &:nth-child(4) {
+                background-color: #f8faff;
+            }
+            &:nth-child(5) {
+                background-color: #f0f2f9;
+            }
+            &:nth-child(6) {
+                background-color: #f8faff;
+            }
+            &:nth-child(7) {
+                background-color: #f0f2f9;
+            }
+            &:nth-child(8) {
+                background-color: #f8faff;
+            }
+            &:nth-child(9) {
+                background-color: #f0f2f9;
+            }
+            &:nth-child(10) {
+                background-color: #f8faff;
+            }
+            &:nth-child(11) {
+                background-color: #f0f2f9;
+            }
+            &:nth-child(12) {
+                background-color: #f8faff;
+            }
+            &:nth-child(13) {
+                background-color: #f0f2f9;
+            }
+            &:nth-child(14) {
+                background-color: #f8faff;
+            }
+            &:nth-child(15) {
+                background-color: #f0f2f9;
+            }
+            &:nth-child(16) {
+                background-color: #f8faff;
+            }
+            &:nth-child(17) {
+                background-color: #f0f2f9;
+            }
+            &:nth-child(18) {
+                background-color: #f8faff;
+            }
+            &:nth-child(19) {
+                background-color: #f0f2f9;
+            }
+            &:nth-child(20) {
+                background-color: #f8faff;
+            }
+        }
+    }
+}
+.price-for-contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .single-pricing-card {
+        h3 {
+            font-size: 22px;
+        }
+        ul {
+            li {
+                padding: 15px 10px;
+                font-size: 15px;
+            }
+        }
+    }
+    .price-for-contact {
+        margin-top: 0;
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-pricing-card {
+        h3 {
+            font-size: 22px;
+        }
+        ul {
+            li {
+                padding: 15px 10px;
+                font-size: 15px;
+            }
+        }
+    }
+    .price-for-contact {
+        margin-top: 0;
+    }
+}
