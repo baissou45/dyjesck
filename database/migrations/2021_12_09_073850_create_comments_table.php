@@ -21,7 +21,7 @@ class CreateCommentsTable extends Migration
             $table->text('comment');
             
             $table->foreignId('post_id')->unsigned()->nullable()->onDelete('cascade');
-            $table->foreignId('commentaire_id')->unsigned()->nullable()->onDelete('cascade');
+            $table->foreignId('comment_id')->unsigned()->nullable()->onDelete('cascade');
 
             $table->timestamps();
             $table->softDeletes();

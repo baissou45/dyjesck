@@ -17,7 +17,7 @@ class Comment extends Model
         'mail',
         'comment',
         'post_id',
-        'commentaire_id',
+        'comment_id',
         
     ];
 
@@ -29,6 +29,17 @@ class Comment extends Model
     }
 
     public function commentaires(){
-        return $this->hasMany(Comment::class);
+        return $this->hasMany(Comment::class, 'comment_id', 'id');
     }
+
+    // /**
+    //  * Get all of the comments for the Comment
+    //  *
+    //  * @return \Illuminate\Database\Eloquent\Relations\HasMany
+    //  */
+    // public function comments(): HasMany
+    // {
+    //     return $this->hasMany(Comment::class, 'foreign_key', 'local_key');
+    // }
+    
 }

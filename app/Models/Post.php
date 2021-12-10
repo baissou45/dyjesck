@@ -17,7 +17,7 @@ class Post extends Model
         'epingle',
         'user_id',
         'date',
-        'categ',
+        'categorie_id',
         'slug',
         'img',
         'img4',
@@ -29,6 +29,10 @@ class Post extends Model
 
     public function user()    {
         return $this->belongsTo(User::class);
+    }
+
+    public function categorie(){
+        return $this->belongsTo(Categorie::class);
     }
 
     public function comments(){

@@ -12,7 +12,7 @@ class CommentController extends Controller
     //
     public function store(Request $request){
 
-        // dd($request->all(), $request->commentaire_id);
+        // dd($request->all(), $request->comment_id);
 
         $validator = Validator::make($request->all(), [
             'nom' => 'required|min:10',
@@ -29,15 +29,14 @@ class CommentController extends Controller
         } else {
 
             Comment::create([
-
                 'nom' => $request->nom,
                 'mail' => $request->mail,
                 'comment' => $request->comment,
-                'post_id' => $request->post_id,
-                'commentaire_id' => $request->commentaire_id,
-                
+                'post_id' => $request->postId,
+                'comment_id' => $request->commentId,
             ]);
             
+            return back();
         }
         
         
@@ -54,20 +53,5 @@ class CommentController extends Controller
         // return back();
     }
 
-    public function reponseStore(Request $request)
-    {
-        $reponseComment = new Comment();
-
-        $reponseComment->comment = $request->get('comment');
-
-        $reponseComment->user()->associate($request->user());
-
-        $reponseComment->parent_id = $request->get('comment_id');
-
-        $post = Post::find($request->get('post_id'));
-
-        $post->comments()->save($reponseComment);
-
-        return back();
-    }
+   
 }

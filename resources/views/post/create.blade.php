@@ -59,12 +59,9 @@
 											<label class="{{ $errors->first('categ') ? 'text-danger' : '' }}">Catégorie <span class="required">*</span></label>
 											<div class="select-box">
 												<select class="form-select form-control {{ $errors->first('categ') ? 'border-danger' : '' }}" name="categ">
-													<option value="5">United Kingdom</option>
-													<option value="1">China</option>
-													<option value="2">United Arab Emirates</option>
-													<option value="0">Germany</option>
-													<option value="3">France</option>
-													<option value="4">Japan</option>
+                                                    @foreach ($categories as $categorie)
+													    <option value="{{ $categorie->id }}"> {{ $categorie->titre }} </option>
+                                                    @endforeach
 												</select>
                                                 @error('categ')
                                                     <small class="text-danger"> {{ $errors->first('categ') }} </small>

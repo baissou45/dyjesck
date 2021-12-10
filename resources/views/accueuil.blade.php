@@ -3,7 +3,7 @@
 @section('contenu')
 	
 	<!-- Start Banner Area -->
-			@include('composants.carousel')
+		@include('composants.carousel')
 	<!-- End Banner Area -->
 
 	<!-- Start Services Area -->
@@ -340,9 +340,17 @@
 	<section class="testimonials-area mt-5">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6 pl-0 pr-0 hidden-xs hidden-md">
+				{{-- <div class="col-lg-6 pl-0 pr-0 hidden-xs hidden-md">
 					<div class="">
 						<img src="{{asset('dysj/slide5.jpg')}}" style="height: 100%">
+					</div>
+				</div> --}}
+				
+				<div class="col-lg-6 pl-0 pr-0">
+					<div class="testimonials-bg">
+						<div class="video-button">
+							<img src="{{asset('dysj/slide5.jpg')}}" style="height: 100%">
+						</div>
 					</div>
 				</div>
 
@@ -354,7 +362,7 @@
 						</div>
 
 						<div class="testimonial-slider owl-carousel owl-theme">
-							<div class="single-testimonial-content">
+							<div class="single-testimonial-content ">
 								<div class="testimonial-avatar">
 									<img src="{{asset('dysj/Victor-zounmenou.jpg')}}" alt="Image">
 									<h3>MONSIEUR VICTOR ZOUNMENOU</h3>
@@ -364,7 +372,7 @@
 								<p>“ Etre concurrent de DYJESCK est un plaisir, même si ça peut paraître bizarre de dire ça. Quand vos aînés ont le respect de la parole donnée, cet esprit de partage de l'expérience, vous ne pouvez que grandir à leur côté, avec eux.”</p>
 							</div>
 
-							<div class="single-testimonial-content">
+							<div class="single-testimonial-content ">
 								<div class="testimonial-avatar">
 									<img src="{{asset('dysj/lambert-koty.jpeg')}}" alt="Image">
 									<h3>MONSIEUR LAMBERT KOTY</h3>
@@ -374,7 +382,7 @@
 								<p>“ C'est un plaisir sincère de témoigner pour la société DYJESCK avec qui nous travaillons depuis des décennies (leur premier marché avec nous fût un chantier de pavage à Ouidah en 1997). Dyjesck, c'est la performance tout simplement. ”</p>
 							</div>
 
-							<div class="single-testimonial-content">
+							<div class="single-testimonial-content ">
 								<div class="testimonial-avatar">
 									<img src="{{asset('dysj/djidjoho.jpg')}}" alt="Image">
 									<h3>MONSIEUR JEAN-JACQUES DJIDJOHO</h3>
@@ -385,7 +393,7 @@
 							</div>
 
 							
-							<div class="single-testimonial-content">
+							<div class="single-testimonial-content ">
 								<div class="testimonial-avatar">
 									<img src="{{asset('dysj/Silhouette-homme.png')}}" alt="Image">
 									<h3>MONSIEUR JIVKO</h3>
@@ -407,112 +415,48 @@
 	<section class="blog-area bg-color-f6f7ff pt-100 pb-70">
 		<div class="container">
 			<div class="section-title">
-				<span class="top-title">Nos Dernieres réalisations</span>
-				<h2>Latest blog & articles</h2>
+				<span class="top-title"></span>
+				<h2>Nos Dernieres réalisations</h2>
 			</div>
 
 			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog style-three">
-						<a href="blog-details.html" class="blog-img">
-							<img src="assets/images/blog/blog-1.jpg" alt="Image">
-							<span class="date">May <br> 03</span>
-						</a>
-
-						<div class="blog-content">
-							<ul>
-								<li>
-									<a href="author.html">
-										By: Larry williams
-									</a>
-								</li>
-								<li class="tag">
-									<a href="blog.html">Maintenance tips</a>
-								</li>
-							</ul>
-
-							<h3>
-								<a href="blog-details.html">Top 5 great tips about handyman service</a>
-							</h3>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog style-three">
-						<a href="blog-details.html" class="blog-img">
-							<img src="assets/images/blog/blog-2.jpg" alt="Image">
-							<span class="date">May <br> 03</span>
-						</a>
-
-						<div class="blog-content">
-							<ul>
-								<li>
-									<a href="author.html">
-										By: Larry williams
-									</a>
-								</li>
-								<li class="tag">
-									<a href="blog.html">Maintenance tips</a>
-								</li>
-							</ul>
-
-							<h3>
-								<a href="blog-details.html">How to find reliable Home Improvement tips</a>
-							</h3>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog style-three">
-						<div class="blog-content">
-							<ul>
-								<li>
-									<a href="author.html">
-										By: Larry williams
-									</a>
-								</li>
-								<li class="tag">
-									<a href="blog.html">Maintenance tips</a>
-								</li>
-							</ul>
-
-							<h3>
-								<a href="blog-details.html">Solve any problem in the kitchen in a short time</a>
-							</h3>
-
-							<a href="blog-details.html" class="read-more">
-								Read mone
-								<i class="ri-arrow-right-line"></i>
-							</a>
-						</div>
-					</div>
 					
-					<div class="single-blog style-three">
-						<div class="blog-content">
-							<ul>
-								<li>
-									<a href="author.html">
-										By: Larry williams
-									</a>
-								</li>
-								<li class="tag">
-									<a href="blog.html">Maintenance tips</a>
-								</li>
-							</ul>
-
-							<h3>
-								<a href="blog-details.html">Simple steps for replacing your own house</a>
-							</h3>
-
-							<a href="blog-details.html" class="read-more">
-								Read mone
-								<i class="ri-arrow-right-line"></i>
+				@foreach ($posts as $post)
+					
+					<div class="col-lg-4 col-md-6">
+						<div class="single-blog style-for-page">
+							<a href="{{route('realisations.show', $post->slug)}}" class="blog-img">
+								<img src="{{asset('assets/images/blog/blog-1.jpg')}}" alt="Image">
+								<span class="date">{{ $post->date }}</span>
 							</a>
+
+							<div class="blog-content">
+								<ul>
+									<li>
+										<a href="author.html">
+											By: {{ $post->user->name }}
+										</a>
+									</li>
+									<li class="tag">
+										<a href="blog.html"> {{ $post->categorie->titre }} </a>
+									</li>
+								</ul>
+	
+								<h3>
+									<a href="blog-details.html"> {{  $post->titre }} </a>
+								</h3>
+
+								<p>{{ Str::limit($post->description, 100, ' ...') }}</p>
+
+								<a href="blog-details.html" class="default-btn">
+									Voir plus
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
+
+				@endforeach
+
 			</div>
 		</div>
 	</section>

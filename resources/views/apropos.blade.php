@@ -6,7 +6,7 @@
 <div class="page-title-area bg-1">
     <div class="container">
         <div class="page-title-content">
-            <h2>À propos de nous</h2>
+            <h2>Qui somme nous ?</h2>
             <ul>
                 <li>
                     <a href="{{ route('accueil') }}">
@@ -71,7 +71,7 @@
     </div>
 </div>
 <!-- End About Area -->
-
+{{-- 
 <!-- Start Our Skills Area -->
 <section class="our-skills-area bg-color-f3f7ff ptb-100">
     <div class="container">
@@ -364,6 +364,6 @@
         </div>
     </div>
 </section>
-<!-- End Team Area -->
+<!-- End Team Area --> --}}
 
 @endsection

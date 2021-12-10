@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categorie;
 use App\Models\Post;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
@@ -14,7 +15,7 @@ class PostController extends Controller
     //
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     public function index(){
@@ -24,7 +25,11 @@ class PostController extends Controller
     }
 
     public function create(){
-        return view('post.create');
+        $categories = Categorie::all();
+
+        return view('post.create',[
+            'categories' => $categories
+        ]);
     }
 
     public function store(Request $request){
@@ -53,7 +58,6 @@ class PostController extends Controller
         ]);
 
         if ($validator->fails()) {
-
             return redirect('post')
                 ->withErrors($validator)
                 ->withInput();
@@ -84,7 +88,7 @@ class PostController extends Controller
             'slug' => Str::slug($request->titre),
             'description' => $request->description,
             'date' => $request->date,
-            'categ' => $request->categ,
+            'categorie_id' => $request->categ,
             'user_id' => auth()->user()->id,
             'epingle' => $epingle,
             // 'img' => $request->img,
@@ -100,5 +104,13 @@ class PostController extends Controller
     public function show(Post $post)
     {
         return view('post.single', compact('post'));
+    }
+
+    public function categorie($slug){
+        $categories = Categorie::all();
+        $categorie = Categorie::where('slug', $slug)->first();
+        $posts = $categorie->posts()->paginate(4);
+        
+        return view('realisations', compact('posts', 'categories'));
     }
 }

@@ -18,15 +18,15 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->string('titre');
             $table->date('date');
-            $table->string('categ');
             $table->string('slug');
-            $table->string('description');
+            $table->text('description');
             $table->boolean('epingle');
             $table->string('img')->nullable();
             $table->string('img2')->nullable();
             $table->string('img3')->nullable();
             $table->string('img4')->nullable();
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('user_id')->onDelete('cascade');
+            $table->foreignId('categorie_id')->onDelete('cascade');
             $table->timestamps();
             $table->softDeletes();
         });

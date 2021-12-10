@@ -53,17 +53,18 @@
                         <div class="blog-content">
                             <ul class="admin">
                                 <li> 
-                                    Maintenance
+                                    {{ $post->categorie->titre }}
                                 </li>
                                 <li> 
                                     <a href="#comments">
-                                        (03) comments
+                                        {{ count($post->comments) }} commentaire(s)
                                     </a>
                                 </li>
                             </ul>
                             
-                            <p>Nulla quis lorem ut libero malesuada feugiat. Sed porttitor lectus nibh. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinara.</p>
-
+                            <p>
+                                {{ $post->description }}
+                            </p>
 
                             <div class="gap-mb-20"></div>
                         </div>
@@ -72,32 +73,83 @@
                     <h3 class="my-5">Commentaires</h3>
 
                     <ul class="comment" id="comments">
-                        <li>
-                            <img src="{{asset('assets/images/blog/comment-1.jpg')}}" alt="Image">
-                            <h3>Harold McLeod</h3>
-                            <span>14, May 2021</span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, quos! Pariatur ipsum aperiam alias distinctio vel molestiae id. Aut atque sequi eius omnis et? Nesciunt blanditiis incidunt.</p>
+                        <div class="row">
+                            @foreach ($post->comments as $comment)
+                                <li>
+                                    <img src="{{asset('assets/images/blog/comment-1.jpg')}}" alt="Image">
+                                    <span>{{ $comment->created_at }}</span>
+                                    <h3> {{ $comment->nom }} </h3>
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{$comment->id}}">
+                                        commenter    
+                                    </button>
+                                    <p>
+                                        {{ $comment->comment }}
+                                    </p>
 
-                            <button data-toggle="modal" data-target="#exampleModalCenter" class="read-more">Répondre</button>
-                        </li>
+                                    {{-- {{ dd($post->comments[2]->commentaires) }} --}}
+                                </li>
+                                    
+                                @forelse ($comment->commentaires as $cmt)
+                                <li class="margin-left">
+                                    <img src="{{asset('assets/images/blog/comment-1.jpg')}}" alt="Image">
+                                    <span>{{ $cmt->created_at }}</span>
+                                    <h3> {{ $cmt->nom }} </h3>
+                                    <p>
+                                        {{ $cmt->comment }}
+                                    </p>
+                                </li>
+                                @empty
+                                @endforelse
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop{{$comment->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Nouveau commentaire</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <form method="post" action="{{route('comment.add')}}">
+                                            @csrf
+                                            <input type="hidden" name="commentId" value="{{$comment->id}}">
 
-                        <li class="margin-left">
-                            <img src="{{asset('assets/images/blog/comment-2.jpg')}}" alt="Image">
-                            <h3>Alex Dew</h3>
-                            <span>14, May 2021</span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, quos! Pariatur ipsum aperiam alias distinctio vel molestiae id. Aut atque sequi eius omnis et? Nesciunt.</p>
+                                            <div class="row">
 
-                            <a href="blog-details.html" class="read-more">Reply</a>
-                        </li>
+                                                <div class="col-lg-6 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Nom *</label>
+                                                        <input type="text" name="nom" class="form-control">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-6 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Email*</label>
+                                                        <input type="email" name="mail" class="form-control">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Commentaire</label>
+                                                        <textarea name="comment" class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                                <button type="submit" class="btn btn-warning">Commenter</button>
+                                            </div>
+                                        </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                
+                            @endforeach
+                        </div>
 
-                        <li>
-                            <img src="{{asset('assets/images/blog/comment-3.jpg')}}" alt="Image">
-                            <h3>Juhon Smith</h3>
-                            <span>14, May 2021</span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, quos! Pariatur ipsum aperiam alias distinctio vel molestiae id. Aut atque sequi eius omnis Nesciunt blanditiis.</p>
-
-                            <a href="blog-details.html" class="read-more">Reply</a>
-                        </li>
                     </ul>
 
                     <div class="leave-reply">
@@ -106,7 +158,7 @@
                         <form method="post" action="{{route('comment.add')}}">
                             @csrf
 
-                            <input type="hidden" name="postId">
+                            <input type="hidden" name="postId" value="{{$post->id}}">
                             
                             <p>
                                 Votre adresse e-mail ne sera pas publiée. <br>
@@ -161,113 +213,53 @@
 
                         <ul>
                             <li>
-                                <a href="blog.html">
+                                <a href="{{route('realisations')}}">
                                     <i class="ri-arrow-right-s-line"></i>
-                                    Renovation
+                                    Toutes les catégories
                                 </a>
                             </li>
-                            <li>
-                                <a href="blog.html">
-                                    <i class="ri-arrow-right-s-line"></i>
-                                    Plumber
-                                </a>
-                            </li>
-                            <li>
-                                <a href="blog.html">
-                                    <i class="ri-arrow-right-s-line"></i>
-                                    Electrical
-                                </a>
-                            </li>
-                            <li>
-                                <a href="blog.html">
-                                    <i class="ri-arrow-right-s-line"></i>
-                                    Painter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="blog.html">
-                                    <i class="ri-arrow-right-s-line"></i>
-                                    Carpentry
-                                </a>
-                            </li>
-                            <li>
-                                <a href="blog.html">
-                                    <i class="ri-arrow-right-s-line"></i>
-                                    Garden
-                                </a>
-                            </li>
-                            <li>
-                                <a href="blog.html">
-                                    <i class="ri-arrow-right-s-line"></i>
-                                    Heating
-                                </a>
-                            </li>
-                            <li>
-                                <a href="blog.html">
-                                    <i class="ri-arrow-right-s-line"></i>
-                                    Home maintenance
-                                </a>
-                            </li>
+                            @foreach ($categories as $categorie)    
+                                <li>
+                                    <a href="{{route('post.categorie', $categorie->slug)}}">
+                                        <i class="ri-arrow-right-s-line"></i>
+                                        {{ $categorie->titre }}
+                                    </a>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
 
                     <div class="sidebar-widget recent-post">
-                        <h3 class="widget-title">Latest post</h3>
+                        <h3 class="widget-title">Autres Travaux </h3>
                         
                         <ul>
-                            <li>
-                                <a href="blog-details.html">
-                                    Why you need <br> handyman services
-                                    <img src="{{asset('assets/images/blog/blog-4.jpg')}}" alt="Image">
-                                </a>
-                                <span>5th May, 2021</span>
-                            </li>
-                            <li>
-                                <a href="blog-details.html">
-                                    Top 10 tips for <br> handyman services
-                                    <img src="{{asset('assets/images/blog/blog-5.jpg')}}" alt="Image">
-                                </a>
-                                <span>4th May, 2021</span>
-                            </li>
-                            <li>
-                                <a href="blog-details.html">
-                                    Top 5 tips for cleaning <br> your home
-                                    <img src="{{asset('assets/images/blog/blog-6.jpg')}}" alt="Image">
-                                </a>
-                                <span>3rd May, 2021</span>
-                            </li>
+                            @php
+                                $i = 0;
+                            @endphp
+                            @foreach ($posts as $post)
+                                <li>
+                                    <a href="blog-details.html">
+                                        {{ $post->titre }} <br> {{ Str::limit($post->description, 20, ' ...') }}
+                                        <img src="assets/images/blog/blog-4.jpg" alt="Image">
+                                    </a>
+                                    <span> {{ $post->date }} </span>
+                                </li>
+                                @php
+                                    $i++ ;
+                                    if ( $i > 3 ) {
+                                        break;
+                                    }
+                                @endphp
+                            @endforeach
                         </ul>
                     </div>
 
+                    
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!-- End Blog Page Area -->
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
   
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
 @endsection

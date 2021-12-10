@@ -3,6 +3,7 @@
 use App\Http\Controllers\RouteController;
 use App\Http\Controllers\PostController;
 use App\Http\CommentControlle;
+use App\Http\Controllers\CategorieController;
 use App\Http\Controllers\CommentController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -37,10 +38,16 @@ Route::get('contact', [RouteController::class, 'contact'])->name('contact');
 Route::get('realisations', [RouteController::class, 'realisations'])->name('realisations');
 Route::get('realisations/{slug}', [RouteController::class, 'realisation'])->name('realisations.show');
 Route::get('apropos', [RouteController::class, 'apropos'])->name('apropos');
+Route::get('qui-somme-nous', [RouteController::class, 'qui'])->name('qui');
+Route::get('domaines', [RouteController::class, 'domaines'])->name('domaines');
+Route::get('equipe', [RouteController::class, 'equipe'])->name('equipe');
+Route::get('pouquoiNous', [RouteController::class, 'pouquoiNous'])->name('pouquoiNous');
 
+Route::get('post/{slug}', [PostController::class, 'categorie'])->name('post.categorie');
 Route::get('post', [PostController::class, 'create'])->name('post.create');
 Route::post('post', [PostController::class, 'store'])->name('post.store');
-Route::get('/posts', [PostController::class, 'index'])->name('posts');
-Route::get('/article/{post:slug}',  [PostController::class, 'show'])->name('post.show');
-Route::post('/comment/store', [CommentController::class, 'store'])->name('comment.add');
-Route::post('/reponse/store',  [CommentController::class, 'reponseStore'])->name('reponse.add');
+
+Route::get('categorie', [CategorieController::class, 'create'])->name('categorie.create');
+Route::post('categorie', [CategorieController::class, 'store'])->name('categorie.store');
+
+Route::post('comentaire', [CommentController::class, 'store'])->name('comment.add');

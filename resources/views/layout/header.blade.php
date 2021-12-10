@@ -1,6 +1,6 @@
 <!-- Start Header Area -->
 <div class="header-area">
-    <div class="top-header-area">
+    {{-- <div class="top-header-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- Start Navbar Area -->
     <div class="navbar-area navbar-area-four">
@@ -100,160 +100,80 @@
             </div>
         </div>
 
+        
         <div class="desktop-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{route('accueil')}}">
                         <img src="{{asset('logo.jpeg')}}" width="100" alt="logo">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
-                                <a href="{{route('accueil')}}" class="nav-link active">
+                                <a href="{{route('accueil')}}" class="nav-link {{ Route::currentRouteName() == "accueil" ? "active" : '' }}">
                                     Accueil
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Pages 
+                                <a href="{{route('realisations')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
+                                    Nos réalisations
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link {{ Route::currentRouteName() == "apropos" ? "active" : '' }}">
+                                    Dyjesck SA
                                     <i class="ri-arrow-down-s-line"></i>
                                 </a>
 
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="about-us.html" class="nav-link">About Us</a>
+                                        <a href="{{route('domaines')}}" class="nav-link">Domaines d’interventions</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="pricing-plan.html" class="nav-link">Pricing Plan</a>
+                                        <a href="{{route('equipe')}}" class="nav-link">Notre equipe</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            Projects 
-                                            <i class="ri-arrow-down-s-line"></i>
-                                        </a>
-
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="our-projects.html" class="nav-link">Our Projects</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="project-details.html" class="nav-link">Projects Details</a>
-                                            </li>
-                                        </ul>
+                                        <a href="{{route('apropos')}}" class="nav-link">Qui somme nous ?</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="faq.html" class="nav-link">FAQ</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            Shop 
-                                            <i class="ri-arrow-down-s-line"></i>
-                                        </a>
-    
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="products.html" class="nav-link">Products</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="cart.html" class="nav-link">Cart</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="checkout.html" class="nav-link">Checkout</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="product-details.html" class="nav-link">Product Details</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="our-staff.html" class="nav-link">Our staff</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            User 
-                                            <i class="ri-arrow-down-s-line"></i>
-                                        </a>
-
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="my-account.html" class="nav-link">My Account</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="sign-in.html" class="nav-link">Sign In</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="sign-up.html" class="nav-link">Sign Up</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="our-team.html" class="nav-link">Our Team</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="terms-of-service.html" class="nav-link">Terms Of Service</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="coming-soon.html" class="nav-link">Coming Soon</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="404.html" class="nav-link">404 Page</a>
+                                        <a href="{{route('pouquoiNous')}}" class="nav-link">Pourquoi nous choisir ?</a>
                                     </li>
                                 </ul>
                             </li>
-
+                            
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Services 
-                                    <i class="ri-arrow-down-s-line"></i>
+                                <a href="{{route('contact')}}" class="nav-link {{ Route::currentRouteName() == "contact" ? "active" : '' }}">Contact</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a href="{{route('categorie.create')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
+                                    Catégorie
                                 </a>
-
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="services.html" class="nav-link">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="services-details.html" class="nav-link">Services Details</a>
-                                    </li>
-                                </ul>
                             </li>
 
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Blog 
-                                    <i class="ri-arrow-down-s-line"></i>
+                                <a href="{{route('post.create')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
+                                    Nouvelle réalisation
                                 </a>
-
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="blog.html" class="nav-link">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="blog-details.html" class="nav-link">Blog Details</a>
-                                    </li>
-                                </ul>
                             </li>
-
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
-                            </li>
+                            
+                            
                         </ul>
 
                         <div class="others-options">
                             <ul>
                                 <li>
-                                    <a href="search-page.html">
-                                        <i class="ri-search-line"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="pricing-plan.html" class="default-btn gradient-btn">
-                                        Get a quote
-                                    </a>
+                                    <li>
+                                        <i class="ri-phone-fill"></i>
+                                        <a href="tel:+22921331311">+ (229) 21 33 13 11</a>
+                                    </li>
+                                    <li>
+                                        <i class="ri-phone-fill"></i>
+                                        <a href="tel:+22921334428">+ (229) 21 33 44 28</a>
+                                    </li>
                                 </li>
                             </ul>
                         </div>
@@ -262,36 +182,6 @@
             </div>
         </div>
 
-        <div class="others-option-for-responsive">
-            <div class="container">
-                <div class="dot-menu">
-                    <div class="inner">
-                        <div class="circle circle-one"></div>
-                        <div class="circle circle-two"></div>
-                        <div class="circle circle-three"></div>
-                    </div>
-                </div>
-                
-                <div class="container">
-                    <div class="option-inner">
-                        <div class="others-options justify-content-center d-flex align-items-center">
-                            <ul>
-                                <li>
-                                    <a href="search.html">
-                                        <i class="ri-search-line"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="search.html" class="default-btn gradient-btn">
-                                        Get a quote
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- End Navbar Area -->
 </div>
