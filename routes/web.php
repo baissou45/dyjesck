@@ -40,7 +40,7 @@ Route::get('apropos', [RouteController::class, 'apropos'])->name('apropos');
 
 Route::get('post', [PostController::class, 'create'])->name('post.create');
 Route::post('post', [PostController::class, 'store'])->name('post.store');
-Route::get('/posts', [PostController::class, 'index'])->name('posts');
-Route::get('/article/{post:slug}',  [PostController::class, 'show'])->name('post.show');
-Route::post('/comment/store', [CommentController::class, 'store'])->name('comment.add');
-Route::post('/reponse/store',  [CommentController::class, 'reponseStore'])->name('reponse.add');
+Route::get('posts', [PostController::class, 'index'])->name('posts');
+Route::get('article/{post:slug}',  [PostController::class, 'show'])->name('post.show');
+Route::post('comment/store', [CommentController::class, 'store'])->name('comment.add');
+Route::post('reponse/store',  [CommentController::class, 'reponseStore'])->name('reponse.add');
