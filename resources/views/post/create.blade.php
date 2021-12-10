@@ -11,7 +11,7 @@
 					<ul>
 						<li>
 							<a href="index.html">
-								Home 
+								Home
 							</a>
 						</li>
 
@@ -29,7 +29,7 @@
 					<div class="col-lg-8 col-md-12">
 						<form method="post" action="{{route('post.store')}}" enctype="multipart/form-data">
                             @csrf
-                            
+
 							<div class="book-online">
 								<h3 class="title">Nouvelle réalisation</h3>
 
@@ -73,16 +73,16 @@
                                     <div class="col-lg-12 col-md-12">
 										<div class="form-group">
 											<label class="{{ $errors->first('description') ? 'text-danger' : '' }}"">Description <span class="required">*</span></label>
-											<textarea name="description" class="form-control  {{ $errors->first('description') ? 'border-danger' : '' }}" rows="3"> {{  old('date') }} </textarea>
+											<textarea name="description" class="form-control  {{ $errors->first('description') ? 'border-danger' : '' }}" rows="3"> {{  old('description') }} </textarea>
                                             @error('description')
                                                 <small class="text-danger"> {{ $errors->first('description') }} </small>
                                             @enderror
 										</div>
 									</div>
-                                    
+
                                     <div class="col-lg-6 col-md-6">
 										<div class="form-group">
-											<label class="{{ $errors->first('img') ? 'text-danger' : '' }}>Image de couverture <span class="required">*</span></label>
+											<label class="{{ $errors->first('img') ? 'text-danger' : '' }}">Image de couverture <span class="required">*</span></label>
 											<input type="file" class="form-control  {{ $errors->first('img') ? 'border-danger' : '' }}" name="img">
                                             @error('img')
                                                 <small class="text-danger"> {{ $errors->first('img') }} </small>
@@ -92,30 +92,30 @@
 
                                     <div class="col-lg-6 col-md-6">
 										<div class="form-group">
-											<label class="{{ $errors->first('img2') ? 'text-danger' : '' }}>Image 2 <span class="required">*</span></label>
-                                            <input type="file" class="form-control  {{ $errors->first('img2') ? 'border-danger' : '' }}" name="img2">
-                                            @error('img2')
-                                                <small class="text-danger"> {{ $errors->first('img2') }} </small>
+											<label class="{{ $errors->first('imga') ? 'text-danger' : '' }}">Image 2 <span class="required">*</span></label>
+                                            <input type="file" class="form-control  {{ $errors->first('imga') ? 'border-danger' : '' }}" name="imga">
+                                            @error('imga')
+                                                <small class="text-danger"> {{ $errors->first('imga') }} </small>
                                             @enderror
 										</div>
 									</div>
-                                    
+
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
-                                            <label class="{{ $errors->first('img3') ? 'text-danger' : '' }}>Image 3 <span class="required">*</span></label>
-                                            <input type="file" class="form-control  {{ $errors->first('img3') ? 'border-danger' : '' }}" name="img3">
-                                            @error('img3')
-                                                <small class="text-danger"> {{ $errors->first('img3') }} </small>
+                                            <label class="{{ $errors->first('imgb') ? 'text-danger' : '' }}">Image 3 <span class="required">*</span></label>
+                                            <input type="file" class="form-control  {{ $errors->first('imgb') ? 'border-danger' : '' }}" name="imgb">
+                                            @error('imgb')
+                                                <small class="text-danger"> {{ $errors->first('imgb') }} </small>
                                             @enderror
 										</div>
 									</div>
-                                    
+
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
-                                            <label class="{{ $errors->first('img4') ? 'text-danger' : '' }}>Image 4 <span class="required">*</span></label>
-                                            <input type="file" class="form-control  {{ $errors->first('img4') ? 'border-danger' : '' }}" name="img4">
-                                            @error('img4')
-                                                <small class="text-danger"> {{ $errors->first('img4') }} </small>
+                                            <label class="{{ $errors->first('imgc') ? 'text-danger' : '' }}">Image 4 <span class="required">*</span></label>
+                                            <input type="file" class="form-control  {{ $errors->first('imgc') ? 'border-danger' : '' }}" name="imgc">
+                                            @error('imgc')
+                                                <small class="text-danger"> {{ $errors->first('imgc') }} </small>
                                             @enderror
 										</div>
 									</div>
@@ -140,5 +140,5 @@
 			</div>
 		</section>
 		<!-- End Online Book Area -->
-	
+
 @endsection
