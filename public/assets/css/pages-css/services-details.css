@@ -18,7 +18,7 @@
   left: 0;
   width: 100px;
   height: 3px;
-  background-color: var(--main-color);
+  background-color: #0131b4;
 }
 
 .services-sidebar ul {
@@ -43,7 +43,7 @@
 
 .services-sidebar ul li a:hover {
   margin-left: 5px;
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .services-sidebar ul li:last-child {
@@ -71,7 +71,7 @@
   left: 0;
   width: 100px;
   height: 3px;
-  background-color: var(--main-color);
+  background-color: #0131b4;
 }
 
 .book-appointment .form-group {

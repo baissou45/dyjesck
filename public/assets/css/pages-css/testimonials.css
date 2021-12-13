@@ -38,7 +38,7 @@
 .testimonials-bg .video-button a i {
   font-size: 50px;
   color: var(--white-color);
-  background-color: var(--main-color);
+  background-color: #0131b4;
   line-height: 1;
   border-radius: 50%;
   background: -webkit-gradient(linear, left top, right top, from(#f21d56), to(#f29422));
@@ -95,7 +95,7 @@
 }
 
 .testimonial-wrap .owl-theme .owl-nav .owl-prev:hover i, .testimonial-wrap .owl-theme .owl-nav .owl-next:hover i {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .single-testimonial-content {
@@ -181,7 +181,7 @@
           transform: scale(1, 1);
   -webkit-transition: all 1s;
   transition: all 1s;
-  border: 5px solid var(--main-color);
+  border: 5px solid #0131b4;
 }
 
 .reviews .sin-testiImage.slick-current i {
@@ -193,7 +193,7 @@
   line-height: 40px;
   text-align: center;
   display: inline-block;
-  background-color: var(--main-color);
+  background-color: #0131b4;
   color: var(--white-color);
   font-size: 25px;
   border-radius: 50px;
@@ -237,7 +237,7 @@
   left: -309px;
   top: 130%;
   background-color: #ffffff;
-  border: 1px solid var(--main-color);
+  border: 1px solid #0131b4;
   font-size: 20px;
   width: 50px;
   height: 50px;
@@ -250,7 +250,7 @@
 }
 
 .reviews .ri-arrow-left-line.slick-arrow:hover {
-  background-color: var(--main-color);
+  background-color: #0131b4;
   color: var(--white-color);
 }
 
@@ -259,7 +259,7 @@
   right: -309px;
   top: 130%;
   background-color: #ffffff;
-  border: 1px solid var(--main-color);
+  border: 1px solid #0131b4;
   font-size: 20px;
   width: 50px;
   height: 50px;
@@ -272,7 +272,7 @@
 }
 
 .reviews .ri-arrow-right-line.slick-arrow:hover {
-  background-color: var(--main-color);
+  background-color: #0131b4;
   color: var(--white-color);
 }
 

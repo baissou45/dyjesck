@@ -90,7 +90,7 @@ product-view-one Style
 }
 
 .product-view-one .modal-content .product-content .product-review .rating i {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .product-view-one .modal-content .product-content .product-review .rating-count {
@@ -247,7 +247,7 @@ product-view-one Style
 }
 
 .product-view-one .modal-content .product-content .product-add-to-cart .input-counter span.minus-btn:hover {
-  background-color: var(--main-color);
+  background-color: #0131b4;
   color: var(--white-color);
 }
 
@@ -258,7 +258,7 @@ product-view-one Style
 }
 
 .product-view-one .modal-content .product-content .product-add-to-cart .input-counter span.plus-btn:hover {
-  background-color: var(--main-color);
+  background-color: #0131b4;
   color: var(--white-color);
 }
 
@@ -325,7 +325,7 @@ product-view-one Style
 }
 
 .product-view-one .modal-content .product-content .share-this-product ul li a:hover i {
-  background-color: var(--main-color);
+  background-color: #0131b4;
   color: var(--white-color);
 }
 
@@ -341,7 +341,7 @@ product-view-one Style
 }
 
 .product-view-one .owl-item.active.current {
-  background-color: var(--main-color) !important;
+  background-color: #0131b4 !important;
   padding: 5px;
 }
 
@@ -364,7 +364,7 @@ product-view-one Style
 }
 
 .product-view-one .owl-next i {
-  background-color: var(--main-color);
+  background-color: #0131b4;
   color: var(--white-color);
   width: 30px;
   height: 30px;
@@ -390,7 +390,7 @@ product-view-one Style
 }
 
 .product-view-one .owl-prev i {
-  background-color: var(--main-color) !important;
+  background-color: #0131b4 !important;
   color: var(--white-color);
   width: 30px;
   height: 30px;

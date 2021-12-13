@@ -58,7 +58,7 @@ Main Content Text Style
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--main-color);
+  background-color: #0131b4;
   display: none;
 }
 
@@ -70,7 +70,7 @@ Main Content Text Style
   position: absolute;
   top: -6px;
   left: 0;
-  color: var(--main-color);
+  color: #0131b4;
   font-size: 25px;
 }
 
@@ -83,7 +83,7 @@ Main Content Text Style
 }
 
 .main-default-content ol li::marker {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .main-default-content ol li:last-child {
@@ -91,7 +91,7 @@ Main Content Text Style
 }
 
 .main-default-content a {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .main-default-content a:hover {

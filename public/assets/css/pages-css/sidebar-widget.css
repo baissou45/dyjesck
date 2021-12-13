@@ -22,7 +22,7 @@ Sidebar Widget Style
   left: 0;
   width: 100px;
   height: 3px;
-  background-color: var(--main-color);
+  background-color: #D90115;
 }
 
 .sidebar-widget ul {
@@ -57,7 +57,7 @@ Sidebar Widget Style
   color: var(--white-color);
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  background-color: var(--main-color);
+  background-color: #D90115;
 }
 
 .sidebar-widget.search .search-form .search-button:hover {
@@ -85,7 +85,7 @@ Sidebar Widget Style
 
 .sidebar-widget.categories ul li a:hover {
   margin-left: 5px;
-  color: var(--main-color);
+  color: #D90115;
 }
 
 .sidebar-widget.categories ul li span {
@@ -123,7 +123,7 @@ Sidebar Widget Style
 }
 
 .sidebar-widget.recent-post ul li a:hover {
-  color: var(--main-color);
+  color: #D90115;
 }
 
 .sidebar-widget.recent-post ul li a img {
@@ -154,9 +154,9 @@ Sidebar Widget Style
 .sidebar-widget.tags ul li a:hover {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
-  background-color: var(--main-color);
+  background-color: #D90115;
   color: var(--white-color);
-  border-color: var(--main-color);
+  border-color: #D90115;
 }
 
 .sidebar-widget.tags ul li:last-child {

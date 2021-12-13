@@ -91,11 +91,11 @@
                         display: inline-block;
                         text-align: center;
                         transition: var(--transition);
-                        color: var(--main-color);
+                        color: #0131b4;
                     }
                     &:hover {
                         i {
-                            background-color: var(--main-color);
+                            background-color: #0131b4;
                             color: var(--white-color);
                         }
                     }
@@ -111,7 +111,7 @@
             }
         }
         span {
-            color: var(--main-color);
+            color: #0131b4;
             del {
                 opacity: 0.5;
                 margin-right: 5px;
@@ -132,7 +132,7 @@
         .product-content {
             h3 {
                 a {
-                    color: var(--main-color);
+                    color: #0131b4;
                 }
             }
         }

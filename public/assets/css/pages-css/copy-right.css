@@ -22,12 +22,12 @@ Copy Right Area Style
 }
 
 .copy-right-area p a {
-  color: var(--main-color);
+  color: #0131b4;
   font-weight: 600;
 }
 
 .copy-right-area p a:hover {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .copy-right-area.copy-right-area-style-two {
@@ -39,6 +39,6 @@ Copy Right Area Style
 }
 
 .copy-right-area.copy-right-area-style-two p a {
-  color: var(--main-color);
+  color: #0131b4;
 }
 /*# sourceMappingURL=copy-right.css.map */

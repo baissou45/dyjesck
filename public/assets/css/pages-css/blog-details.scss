@@ -10,7 +10,7 @@ Blog Details Content Style
 			bottom: 30px;
 			right: 30px;
 			text-align: center;
-			background-color: var(--main-color);
+			background-color: #0131b4;
 			color: var(--white-color);
 			padding: 5px 20px;
 			font-size: 14px;
@@ -18,7 +18,7 @@ Blog Details Content Style
 	}
 	.blog-top-content {
         .product {
-            color: var(--main-color);
+            color: #0131b4;
             font-size: 16px;
             display: block;
             margin-bottom: 10px;
@@ -41,7 +41,7 @@ Blog Details Content Style
 					transition: var(--transition);
                     font-size: 16px;
 					i {
-						color: var(--main-color);
+						color: #0131b4;
 						display: inline-block;
 						margin-right: 5px;
 						position: relative;
@@ -73,7 +73,7 @@ Blog Details Content Style
                     font-size: 14px;
                     margin-bottom: 10px;
                     display: block;
-                    color: var(--main-color);
+                    color: #0131b4;
                 }
                 h3 {
                     font-size: 20px;
@@ -92,7 +92,7 @@ Blog Details Content Style
 			margin-top: 30px;
 			margin-bottom: 30px;
 			background: linear-gradient(to right, #f6f7ff, #f0f8ff);
-			border-left: 2px solid var(--main-color);
+			border-left: 2px solid #0131b4;
 			p {
 				font-size: 18px;
 				color: var(--heading-color);
@@ -113,7 +113,7 @@ Blog Details Content Style
 			}
 			i {
 				font-size: 60px;
-				color: var(--main-color);
+				color: #0131b4;
 				position: absolute;
 				top: 25px;
 				left: 0;
@@ -150,7 +150,7 @@ Blog Details Content Style
 					display: inline-block;
                     border-radius: var(--border-radius);
 					&:hover {
-                        color: var(--main-color);
+                        color: #0131b4;
 					}
 				}
 			}
@@ -174,7 +174,7 @@ Blog Details Content Style
 			cursor: pointer;
 			i {
 				font-size: 15px;
-				background-color: var(--main-color);
+				background-color: #0131b4;
 				width: 40px;
 				height: 40px;
 				line-height: 40px;
@@ -270,7 +270,7 @@ Blog Details Content Style
 				left: 0;
 				width: 150px;
 				height: 3px;
-				background-color: var(--main-color);
+				background-color: #0131b4;
 			}
 		}
 		form {

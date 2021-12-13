@@ -71,7 +71,7 @@ product-view-one Style
 					display: inline-block;
 					padding-right: 5px;
 					i {
-						color: var(--main-color);
+						color: #0131b4;
 					}
 				}
 				.rating-count {
@@ -212,7 +212,7 @@ product-view-one Style
 						left: 0;
 						transition: var(--transition);
 						&:hover {
-							background-color: var(--main-color);
+							background-color: #0131b4;
 							color: var(--white-color);
 						}
 					}
@@ -220,7 +220,7 @@ product-view-one Style
 						right: 0;
 						transition: var(--transition);
 						&:hover {
-							background-color: var(--main-color);
+							background-color: #0131b4;
 							color: var(--white-color);
 						}
 					}
@@ -270,7 +270,7 @@ product-view-one Style
 							}
 							&:hover {
 								i {
-									background-color: var(--main-color);
+									background-color: #0131b4;
 									color: var(--white-color);
 								}
 							}
@@ -290,7 +290,7 @@ product-view-one Style
 		margin-bottom: 30px;
 	}
 	.owl-item.active.current {
-		background-color: var(--main-color) !important;
+		background-color: #0131b4 !important;
 		padding: 5px;
 	}
 	&.fade {
@@ -306,7 +306,7 @@ product-view-one Style
 		opacity: 0;
 		transform: translateY(-25px);
 		i {
-			background-color: var(--main-color);
+			background-color: #0131b4;
 			color: var(--white-color);
 			width: 30px;
 			height: 30px;
@@ -327,7 +327,7 @@ product-view-one Style
 		opacity: 0;
 		transform: translateY(-25px);
 		i {
-			background-color: var(--main-color) !important;
+			background-color: #0131b4 !important;
 			color: var(--white-color);
 			width: 30px;
 			height: 30px;

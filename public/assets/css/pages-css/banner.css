@@ -35,7 +35,7 @@ Banner Area Style
   bottom: 145px !important;
   left: 80px;
   background-color: var(--white-color);
-  color: var(--main-color);
+  color: #D90115;
   max-width: 300px;
   border-radius: 20px;
 }
@@ -50,7 +50,7 @@ Banner Area Style
   position: absolute;
   top: 25px;
   left: 20px;
-  background-color: var(--main-color);
+  background-color: #D90115;
   height: 50px;
   width: 50px;
   line-height: 50px;
@@ -75,7 +75,7 @@ Banner Area Style
 }
 
 .banner-area .banner-img .reliable i {
-  color: var(--main-color);
+  color: #D90115;
   font-size: 30px;
 }
 
@@ -255,7 +255,7 @@ Lines Area Style
   width: 100%;
   top: 0;
   left: 0;
-  background-color: var(--main-color);
+  background-color: #D90115;
   -webkit-animation: moveLeftBounces-two 20s linear infinite;
           animation: moveLeftBounces-two 20s linear infinite;
 }
@@ -296,7 +296,7 @@ Lines Area Style
   width: 100%;
   top: 0;
   left: 0;
-  background-color: var(--main-color);
+  background-color: #D90115;
   -webkit-animation: moveLeftBounces-one 20s linear infinite;
           animation: moveLeftBounces-one 20s linear infinite;
 }

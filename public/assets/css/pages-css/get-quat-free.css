@@ -31,7 +31,7 @@
 }
 
 .get-free-quote-bg.style-two .get-free-form .form-group .form-control:focus {
-  border-color: var(--main-color);
+  border-color: #0131b4;
 }
 
 .get-free-form {
@@ -86,7 +86,7 @@
 }
 
 .get-free-form .form-group .form-control:focus {
-  border-color: var(--main-color);
+  border-color: #0131b4;
 }
 
 .get-free-form .form-group .form-control::-webkit-input-placeholder {
@@ -106,7 +106,7 @@
 }
 
 .get-free-form .form-group .form-control:focus {
-  border-color: var(--main-color);
+  border-color: #0131b4;
 }
 
 .get-free-form .default-btn {
@@ -152,7 +152,7 @@
   height: 80px;
   line-height: 72px;
   text-align: center;
-  background-color: var(--main-color);
+  background-color: #0131b4;
   border: 5px solid var(--white-color);
   display: inline-block;
   font-size: 35px;

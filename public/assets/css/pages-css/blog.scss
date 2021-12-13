@@ -11,7 +11,7 @@ Blog Area Style
            bottom: 30px;
            right: 30px;
            text-align: center;
-           background-color: var(--main-color);
+           background-color: #0131b4;
            color: var(--white-color);
            padding: 5px 20px;
            font-size: 14px;
@@ -30,14 +30,14 @@ Blog Area Style
                 display: inline-block;
                 font-size: 14px;
                 a {
-                    color: var(--main-color);
+                    color: #0131b4;
                 }
                 &.tag {
                     margin-left: 30px;
                     a {
                         color: var(--body-color);
                         &:hover {
-                            color: var(--main-color);
+                            color: #0131b4;
                         }
                     }
                 }
@@ -48,7 +48,7 @@ Blog Area Style
             a {
                 color: var(--heading-color);
                 &:hover {
-                    color: var(--main-color);
+                    color: #0131b4;
                 }
             }
         }
@@ -77,13 +77,13 @@ Blog Area Style
             }
             .default-btn {
                 background: transparent;
-                border: 1px solid var(--main-color);
-                color: var(--main-color);
+                border: 1px solid #0131b4;
+                color: #0131b4;
                 &::before {
-                    background: var(--main-color);
+                    background: #0131b4;
                 }
                 &::after {
-                    background: var(--main-color);
+                    background: #0131b4;
                 }
                 &:hover {
                     color: var(--white-color);

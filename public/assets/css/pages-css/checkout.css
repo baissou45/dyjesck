@@ -21,7 +21,7 @@ Checkout Area Style
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var(--main-color);
+  background-color: #0131b4;
   width: 150px;
   height: 3px;
 }
@@ -73,7 +73,7 @@ Checkout Area Style
 }
 
 .checkout-area .billing-details .form-group .nice-select .list .option:hover {
-  background-color: var(--main-color) !important;
+  background-color: #0131b4 !important;
   color: var(--white-color);
 }
 
@@ -86,7 +86,7 @@ Checkout Area Style
 }
 
 .checkout-area .billing-details .form-group .nice-select .option:hover, .checkout-area .billing-details .form-group .nice-select .option.focus, .checkout-area .billing-details .form-group .nice-select .option.selected.focus {
-  background-color: var(--main-color) !important;
+  background-color: #0131b4 !important;
   color: var(--white-color) !important;
 }
 
@@ -131,7 +131,7 @@ Checkout Area Style
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var(--main-color);
+  background-color: #0131b4;
   width: 150px;
   height: 3px;
 }
@@ -180,7 +180,7 @@ Checkout Area Style
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var(--main-color);
+  background-color: #0131b4;
   width: 150px;
   height: 3px;
 }
@@ -214,11 +214,11 @@ Checkout Area Style
 }
 
 .checkout-area .faq-accordion .accordion .accordion-title.active::after {
-  background-color: var(--main-color);
+  background-color: #0131b4;
 }
 
 .checkout-area .faq-accordion .accordion .accordion-title.active::before {
-  border-color: var(--main-color);
+  border-color: #0131b4;
 }
 
 .checkout-area .faq-accordion .accordion .accordion-title::before {
@@ -246,7 +246,7 @@ Checkout Area Style
 }
 
 .checkout-area .faq-accordion .accordion .accordion-title:hover {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .checkout-area .faq-accordion .accordion .accordion-item {
@@ -265,11 +265,11 @@ Checkout Area Style
 }
 
 .checkout-area .faq-accordion .form-check label a {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .checkout-area .faq-accordion .form-check label a:hover {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .checkout-area .log-in-coupon-code .faq-accordion {

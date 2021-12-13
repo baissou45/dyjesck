@@ -72,11 +72,11 @@ class PostController extends Controller
         //$input['img'] = date('Y-m-d-H:i:s')."-".time()."-".$image->getClientOriginalName();
         $destinationPath = public_path('/postimage');
 
-        Image::make($image->getRealPath())->resize(860, 500, function ($constraint) {
-		    $constraint->aspectRatio();
-		})->save($destinationPath.'/'.$input['img']);
+        // Image::make($image->getRealPath())->resize(860, 500, function ($constraint) {
+		//     $constraint->aspectRatio();
+		// })->save($destinationPath.'/'.$input['img']);
 
-        $destinationPath = public_path('/uploads');
+        // $destinationPath = public_path('/uploads');
         $image->move($destinationPath, $input['img']);
 
         $imgsize='postimage/'.$input['img'];
@@ -89,11 +89,11 @@ class PostController extends Controller
         //$input['imga'] = date('Y-m-d-H:i:s')."-".time()."-".$imagea->getClientOriginalName();
         $destinationPath = public_path('/postimage');
 
-        Image::make($imagea->getRealPath())->resize(860, 500, function ($constraint) {
-		    $constraint->aspectRatio();
-		})->save($destinationPath.'/'.$input['imga']);
+        // Image::make($imagea->getRealPath())->resize(860, 500, function ($constraint) {
+		//     $constraint->aspectRatio();
+		// })->save($destinationPath.'/'.$input['imga']);
 
-        $destinationPath = public_path('/uploads');
+        // $destinationPath = public_path('/uploads');
         $imagea->move($destinationPath, $input['imga']);
 
         $imgasize='postimage/'.$input['imga'];
@@ -108,11 +108,11 @@ class PostController extends Controller
         //$input['imgb'] = date('Y-m-d-H:i:s')."-".time()."-".$imageb->getClientOriginalName();
         $destinationPath = public_path('/postimage');
 
-        Image::make($imageb->getRealPath())->resize(860, 500, function ($constraint) {
-		    $constraint->aspectRatio();
-		})->save($destinationPath.'/'.$input['imgb']);
+        // Image::make($imageb->getRealPath())->resize(860, 500, function ($constraint) {
+		//     $constraint->aspectRatio();
+		// })->save($destinationPath.'/'.$input['imgb']);
 
-        $destinationPath = public_path('/uploads');
+        // $destinationPath = public_path('/uploads');
         $imageb->move($destinationPath, $input['imgb']);
 
         $imgbsize='postimage/'.$input['imgb'];
@@ -127,11 +127,11 @@ class PostController extends Controller
         //$input['imgc'] = date('Y-m-d-H:i:s')."-".time()."-".$imagec->getClientOriginalName();
         $destinationPath = public_path('/postimage');
 
-        Image::make($imagec->getRealPath())->resize(860, 500, function ($constraint) {
-		    $constraint->aspectRatio();
-		})->save($destinationPath.'/'.$input['imgc']);
+        // Image::make($imagec->getRealPath())->resize(860, 500, function ($constraint) {
+		//     $constraint->aspectRatio();
+		// })->save($destinationPath.'/'.$input['imgc']);
 
-        $destinationPath = public_path('/uploads');
+        // $destinationPath = public_path('/uploads');
         $imagec->move($destinationPath, $input['imgc']);
 
         $imgcsize='postimage/'.$input['imgc'];

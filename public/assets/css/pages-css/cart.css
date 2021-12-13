@@ -63,7 +63,7 @@ Cart Area Style
 }
 
 .cart-area .cart-table table tbody tr td a:hover {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .cart-area .cart-table table tbody tr td .default-btn {
@@ -133,7 +133,7 @@ Cart Area Style
 
 .cart-area .cart-table table tbody tr td.product-quantity .input-counter .minus-btn:hover {
   color: var(--white-color);
-  background-color: var(--main-color);
+  background-color: #0131b4;
 }
 
 .cart-area .cart-table table tbody tr td.product-quantity .input-counter .plus-btn {
@@ -157,7 +157,7 @@ Cart Area Style
 
 .cart-area .cart-table table tbody tr td.product-quantity .input-counter .plus-btn:hover {
   color: var(--white-color);
-  background-color: var(--main-color);
+  background-color: #0131b4;
 }
 
 .cart-area .coupon-cart {
@@ -174,7 +174,7 @@ Cart Area Style
 }
 
 .cart-area .coupon-cart .form-group .form-control:focus {
-  border-color: var(--main-color);
+  border-color: #0131b4;
 }
 
 .cart-area .coupon-cart .form-group .default-btn {
@@ -217,7 +217,7 @@ Cart Area Style
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var(--main-color);
+  background-color: #0131b4;
   width: 150px;
   height: 3px;
 }
