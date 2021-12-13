@@ -107,9 +107,6 @@
                         <h3 class="widget-title">Autres Travaux </h3>
                         
                         <ul>
-                            @php
-                                $i = 0;
-                            @endphp
                             @foreach ($posts as $post)
                                 <li>
                                     <a href="blog-details.html">
@@ -118,12 +115,6 @@
                                     </a>
                                     <span> {{ $post->date }} </span>
                                 </li>
-                                @php
-                                    $i++ ;
-                                    if ( $i > 3 ) {
-                                        break;
-                                    }
-                                @endphp
                             @endforeach
                         </ul>
                     </div>
