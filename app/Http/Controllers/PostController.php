@@ -6,15 +6,14 @@ use App\Models\Categorie;
 use App\Models\Post;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use Intervention\Image\Facades\Image;
+// use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Validator;
 // use Illuminate\Validation\Validator;
 
 class PostController extends Controller
 {
     //
-    public function __construct()
-    {
+    public function __construct() {
         // $this->middleware('auth');
     }
 
@@ -84,7 +83,7 @@ class PostController extends Controller
         $destinationPath = public_path('/uploads');
         $image->move($destinationPath, $input['img']);
 
-        $imgsize=$destinationPath.'/'.$input['img'];
+        $imgsize='postimage/'.$input['img'];
 
 
         //imege 1
@@ -101,7 +100,7 @@ class PostController extends Controller
         $destinationPath = public_path('/uploads');
         $imagea->move($destinationPath, $input['imga']);
 
-        $imgasize=$destinationPath.'/'.$input['imga'];
+        $imgasize='postimage/'.$input['imga'];
 
 
 
@@ -120,7 +119,7 @@ class PostController extends Controller
         $destinationPath = public_path('/uploads');
         $imageb->move($destinationPath, $input['imgb']);
 
-        $imgbsize=$destinationPath.'/'.$input['imgb'];
+        $imgbsize='postimage/'.$input['imgb'];
 
 
         //image 3
@@ -139,7 +138,7 @@ class PostController extends Controller
         $destinationPath = public_path('/uploads');
         $imagec->move($destinationPath, $input['imgc']);
 
-        $imgcsize=$destinationPath.'/'.$input['imgc'];
+        $imgcsize='postimage/'.$input['imgc'];
 
 
 
@@ -152,9 +151,9 @@ class PostController extends Controller
             'user_id' => auth()->user()->id,
             'epingle' => $epingle,
             'img' => $imgsize,
-            'imga' => $imgasize,
-            'imgb' => $imgbsize,
-            'imgc' => $imgcsize,
+            'img2' => $imgasize,
+            'img3' => $imgbsize,
+            'img4' => $imgcsize,
         ]);
 
         return redirect()->back();

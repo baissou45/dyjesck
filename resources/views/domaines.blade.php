@@ -9,10 +9,11 @@
             <h2>Domaines d’interventions</h2>
             <ul>
                 <li>
-                    <a href="{{ route('accueil') }}">
-                        Accueil
+                    <a href="{{route('accueil')}}">
+                        Accueil 
                     </a>
                 </li>
+                
                 <li class="active">À propos de nous</li>
             </ul>
         </div>
@@ -34,10 +35,10 @@
                     <div class="skill-bar" data-percentage="38%">
                         <h4 class="progress-title-holder">
                             <span class="progress-title">Compétences de réparation</span>
-                            &emsp;&emsp;<span class="progress-number-wrapper">
+                            <span class="progress-number-wrapper">
                                 <span class="progress-number-mark">
                                     <span class="percent"></span>
-                                    <span class="down-arrow"></span>
+                                    {{-- <span class="down-arrow"></span> --}}
                                 </span>
                             </span>
                         </h4>
@@ -50,10 +51,10 @@
                     <div class="skill-bar color-change" data-percentage="6%">
                         <h4 class="progress-title-holder clearfix">
                             <span class="progress-title">Adduction d'Eau Villageoises</span>
-                            &emsp;&emsp;<span class="progress-number-wrapper">
+                            <span class="progress-number-wrapper">
                                 <span class="progress-number-mark">
-                                    &emsp;<span class="percent"></span>
-                                    <span class="down-arrow"></span>
+                                    <span class="percent"></span>
+                                    {{-- <span class="down-arrow"></span> --}}
                                 </span>
                             </span>
                         </h4>
@@ -66,10 +67,10 @@
                     <div class="skill-bar" data-percentage="33%">
                         <h4 class="progress-title-holder clearfix">
                             <span class="progress-title">Pavage et Assainissement</span>
-                            &emsp;&emsp; <span class="progress-number-wrapper">
+                             <span class="progress-number-wrapper">
                                 <span class="progress-number-mark">
                                     <span class="percent"></span>
-                                    <span class="down-arrow"></span>
+                                    {{-- <span class="down-arrow"></span> --}}
                                 </span>
                             </span>
                         </h4>
@@ -82,10 +83,10 @@
                     <div class="skill-bar color-change mb-0" data-percentage="77%">
                         <h4 class="progress-title-holder clearfix">
                             <span class="progress-title">Total des Projets</span>
-                            &emsp;&emsp;<span class="progress-number-wrapper">
+                            <span class="progress-number-wrapper">
                                 <span class="progress-number-mark">
-                                    &emsp;<span class="percent"></span>
-                                    <span class="down-arrow"></span>
+                                    <span class="percent"></span>
+                                    {{-- <span class="down-arrow"></span> --}}
                                 </span>
                             </span>
                         </h4>
@@ -99,7 +100,7 @@
 
             <div class="col-lg-6">
                 <div class="skill-img">
-                    <img src="assets/images/skill-img.jpg" alt="Image">
+                    <img src="{{asset('dysj/domaine.JPG')}}" alt="Image">
                     <h3>Notre expérience de travail est de 25 ans</h3>
                     <img src="assets/images/skill-shape.png" class="skill-shape" alt="Image">
                 </div>

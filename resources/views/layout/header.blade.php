@@ -138,9 +138,9 @@
                                     <li class="nav-item">
                                         <a href="{{route('apropos')}}" class="nav-link">Qui somme nous ?</a>
                                     </li>
-                                    <li class="nav-item">
+                                    {{-- <li class="nav-item">
                                         <a href="{{route('pouquoiNous')}}" class="nav-link">Pourquoi nous choisir ?</a>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </li>
                             

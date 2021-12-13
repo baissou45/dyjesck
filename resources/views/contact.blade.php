@@ -3,15 +3,15 @@
 @section('contenu')
 	
 	<!-- Start Page Title Area -->
-	<div class="page-title-area bg-8">
+	<div class="page-title-area bg-1">
 		<div class="container">
 			<div class="page-title-content">
 				<h2>Contact us</h2>
 
 				<ul>
 					<li>
-						<a href="index.html">
-							Home 
+						<a href="{{route('accueil')}}">
+							Accueil 
 						</a>
 					</li>
 

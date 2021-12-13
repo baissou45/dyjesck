@@ -10,8 +10,8 @@
 
             <ul>
                 <li>
-                    <a href="index.html">
-                        Home 
+                    <a href="{{route('accueil')}}">
+                        Accueil 
                     </a>
                 </li>
 

@@ -10,8 +10,8 @@
 
             <ul>
                 <li>
-                    <a href="index.html">
-                        Home 
+                    <a href="{{route('accueil')}}">
+                        Accueil 
                     </a>
                 </li>
 
@@ -31,23 +31,22 @@
                     <div class="row justify-content-center">
                         
                         @foreach ($posts as $post)
-                            
                             <div class="col-lg-6 col-md-6">
                                 <div class="single-blog style-for-page">
                                     <a href="{{route('realisations.show', $post->slug)}}" class="blog-img">
-                                        <img src="{{asset('assets/images/blog/blog-1.jpg')}}" alt="Image">
+                                        <img src="{{asset($post->img)}}" style="width: 400px; height: 430px;" />
                                         <span class="date">{{ $post->date }}</span>
                                     </a>
         
                                     <div class="blog-content">
                                         <ul>
                                             <li>
-                                                <a href="author.html">
+                                                <a href="{{route('realisations.show', $post->slug)}}">
                                                     By: {{ $post->user->name }}
                                                 </a>
                                             </li>
                                             <li class="tag">
-                                                <a href="blog.html"> {{ $post->categorie->titre }} </a>
+                                                <a href="{{route('realisations.show', $post->slug)}}"> {{ $post->categorie->titre }} </a>
                                             </li>
                                         </ul>
             

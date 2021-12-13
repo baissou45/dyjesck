@@ -3,19 +3,19 @@
 @section('contenu')
 
     <!-- Start Page Title Area -->
-		<div class="page-title-area bg-3">
+		<div class="page-title-area bg-1">
 			<div class="container">
 				<div class="page-title-content">
 					<h2>Nouvelle catégorie</h2>
 
 					<ul>
 						<li>
-							<a href="index.html">
-								Home 
+							<a href="{{route('accueil')}}">
+								Accueil
 							</a>
 						</li>
 
-						<li class="active">Book online</li>
+						<li class="active">Nouvelle catégorie</li>
 					</ul>
 				</div>
 			</div>

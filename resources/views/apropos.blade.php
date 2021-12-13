@@ -9,10 +9,11 @@
             <h2>Qui somme nous ?</h2>
             <ul>
                 <li>
-                    <a href="{{ route('accueil') }}">
-                        Accueil
+                    <a href="{{route('accueil')}}">
+                        Accueil 
                     </a>
                 </li>
+
                 <li class="active">À propos de nous</li>
             </ul>
         </div>
