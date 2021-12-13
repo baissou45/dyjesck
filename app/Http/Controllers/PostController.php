@@ -40,7 +40,7 @@ class PostController extends Controller
         $validator = Validator::make($request->all(), [
             'titre' => 'required|min:3',
             'description' => 'required|min:10',
-            'date' => 'required',
+            'date' => 'nullable',
             'categ' => 'required',
             'epingle' => 'nullable',
             'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:15000',

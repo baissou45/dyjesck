@@ -3,7 +3,7 @@
 @section('contenu')
     
 <!-- Start Page Title Area -->
-<div class="page-title-area bg-7">
+<div class="page-title-area bg-1">
     <div class="container">
         <div class="page-title-content">
             <h2>Blog details</h2>
@@ -29,7 +29,7 @@
             <div class="col-lg-8">
                 <div class="blog-details-content mr-15">
 
-                    <h2 class="mb-5">The ultimate guide on how to use Inata software?</h2>
+                    <h2 class="mb-5"> {{$post->titre}} </h2>
 
                     
                     <div class="blog-details-img">
