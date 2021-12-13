@@ -9,12 +9,12 @@
             <h2>Domaines d’interventions</h2>
             <ul>
                 <li>
-                    <a href="{{route('accueil')}}">
+                    <a class="text-white" style="font-size: 20px" href="{{route('accueil')}}">
                         Accueil 
                     </a>
                 </li>
                 
-                <li class="active">À propos de nous</li>
+                <li class="active" style="font-size: 20px">À propos de nous</li>
             </ul>
         </div>
     </div>
