@@ -35,7 +35,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     
-    Route::get('/dashboard', 'UserController@index')->name('dashboard');
+    Route::get('/dashboard', [RouteController::class, 'accueuil'])->name('dashboard');
 
     Route::get('post/{slug}', [PostController::class, 'categorie'])->name('post.categorie');
     Route::get('post', [PostController::class, 'create'])->name('post.create');
