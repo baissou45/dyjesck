@@ -16,7 +16,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="single-services-three">
-						<img src="assets/images/icon/icon-1.png" alt="Image">
+						<img src="{{asset('assets/images/icon/icon-1.png')}}" alt="Image">
 						<h3>
 							<a href="#">
 								BÂTIMENT
@@ -26,7 +26,7 @@
 				</div>
 				<div class="col">
 					<div class="single-services-three">
-						<img src="assets/images/icon/icon-2.png" alt="Image">
+						<img src="{{asset('assets/images/icon/icon-2.png')}}" alt="Image">
 						<h3>
 							<a href="#">
 								ADDUCTION D'EAU
@@ -36,7 +36,7 @@
 				</div>
 				<div class="col">
 					<div class="single-services-three">
-						<img src="assets/images/icon/icon-3.png" alt="Image">
+						<img src="{{asset('assets/images/icon/icon-3.png')}}" alt="Image">
 						<h3>
 							<a href="#">
 								Electrical
@@ -46,7 +46,7 @@
 				</div>
 				<div class="col">
 					<div class="single-services-three">
-						<img src="assets/images/icon/icon-4.png" alt="Image">
+						<img src="{{asset('assets/images/icon/icon-4.png')}}" alt="Image">
 						<h3>
 							<a href="#">
 								REVÊTEMENT
@@ -56,7 +56,7 @@
 				</div>
 				<div class="col">
 					<div class="single-services-three">
-						<img src="assets/images/icon/icon-5.png" alt="Image">
+						<img src="{{asset('assets/images/icon/icon-5.png')}}" alt="Image">
 						<h3>
 							<a href="#">
 								PAVAGE ET ASSAINISSEMENT
@@ -68,34 +68,6 @@
 		</div>
 	</section>
 	<!-- End Services Area -->
-
-	<!-- End About Area -->
-	{{-- <div class="section about-area ptb-100">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<div class="about-img-three mr-15">
-						<img src="assets/images/abput-img-3.png" alt="Image">
-						<img src="assets/images/abput-img-shape-3.png" class="abput-img-shape-3" alt="Image">
-						<img src="assets/images/abput-img-logo-3.png" class="abput-img-logo-3" alt="Image">
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="about-content style-three ml-15">
-						<span class="top-title">What we do</span>
-						<h2>Our goal is to provide customers handyman services</h2>
-						<p>Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Pellentesque in ipsum id orci porta dapibus.</p>
-						<p>Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis.</p>
-	
-						<a href="about-us.html" class="default-btn gradient-btn">
-							Explore more
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> --}}
-	<!-- End About Area -->
 
 	<!-- Start Our Services Area -->
 	<section class="our-services-area style-three pt-100 pb-70">
@@ -115,7 +87,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single-services-two">
 						<a href="#">
-							<img src="{{asset('dysj/batiment.jpg')}}" alt="Image" style="height: 200px">
+							<img src="{{asset('dysj/batiment.jpg')}}" alt="Image" style="height: 250px">
 						</a>
 						<h3><a href="#">BÂTIMENT</a></h3>
 						<p>
@@ -128,7 +100,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single-services-two">
 						<a href="#">
-							<img src="{{asset('dysj/revetement.jpg')}}" alt="Image" style="height: 200px">
+							<img src="{{asset('dysj/revetement.jpg')}}" alt="Image" style="height: 250px ">
 						</a>
 						<h3><a href="#">REVÊTEMENT</a></h3>
 						<p>
@@ -140,7 +112,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single-services-two">
 						<a href="#">
-							<img src="{{asset('dysj/pavage.jpg')}}" alt="Image" style="height: 200px">
+							<img src="{{asset('dysj/pavage.jpg')}}" alt="Image" style="height: 250px ">
 						</a>
 						<h3><a href="#">PAVAGE ET ASSAINISSEMENT</a></h3>
 						<p>
@@ -152,7 +124,7 @@
 				<div class="col-lg-3 col-md-6">	
 					<div class="single-services-two">
 						<a href="#">
-							<img src="{{asset('dysj/adduction.jpg')}}" alt="Image" style="height: 200px">
+							<img src="{{asset('dysj/adduction.jpg')}}" alt="Image" style="height: 250px ">
 						</a>
 						<h3>
 							<a href="#">ADDUCTION D'EAU</a>
@@ -365,7 +337,7 @@
 			</div>
 
 			<div class="row justify-content-center">
-					
+
 				@foreach ($posts as $post)
 					
 					<div class="col-lg-4 col-md-6">

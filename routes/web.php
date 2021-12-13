@@ -37,17 +37,17 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     
     Route::get('/dashboard', [RouteController::class, 'accueuil'])->name('dashboard');
 
-    Route::get('post/{slug}', [PostController::class, 'categorie'])->name('post.categorie');
     Route::get('post', [PostController::class, 'create'])->name('post.create');
     Route::post('post', [PostController::class, 'store'])->name('post.store');
-
+    
     Route::get('categorie', [CategorieController::class, 'create'])->name('categorie.create');
     Route::post('categorie', [CategorieController::class, 'store'])->name('categorie.store');
-
-    Route::post('comentaire', [CommentController::class, 'store'])->name('comment.add');
+    
     
 });
 
+Route::get('post/{slug}', [PostController::class, 'categorie'])->name('post.categorie');
+Route::post('comentaire', [CommentController::class, 'store'])->name('comment.add');
 Route::get('/', [RouteController::class, 'accueuil'])->name('accueil');
 Route::get('contact', [RouteController::class, 'contact'])->name('contact');
 Route::get('realisations', [RouteController::class, 'realisations'])->name('realisations');

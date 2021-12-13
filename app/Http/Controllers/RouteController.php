@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class RouteController extends Controller{
 
     public function accueuil(){
-        $posts = Post::orderBy('id', 'desc')->get();
+        $posts = Post::orderBy('id', 'desc')->paginate(3);
         return view('accueuil', compact('posts'));
     }
 

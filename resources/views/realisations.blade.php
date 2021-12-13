@@ -10,12 +10,12 @@
 
             <ul>
                 <li>
-                    <a href="{{route('accueil')}}">
+                    <a class=" text-white" style="font-size: 20px" href="{{route('accueil')}}">
                         Accueil 
                     </a>
                 </li>
 
-                <li class="active">Nos Réalisations</li>
+                <li class="active" style="font-size: 20px">Nos Réalisations</li>
             </ul>
         </div>
     </div>
