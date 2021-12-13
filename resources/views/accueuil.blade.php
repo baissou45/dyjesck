@@ -371,7 +371,7 @@
 					<div class="col-lg-4 col-md-6">
 						<div class="single-blog style-for-page">
 							<a href="{{route('realisations.show', $post->slug)}}" class="blog-img">
-								<img src="{{asset('assets/images/blog/blog-1.jpg')}}" alt="Image">
+								<img src="{{asset($post->img)}}" alt="Image">
 								<span class="date">{{ $post->date }}</span>
 							</a>
 

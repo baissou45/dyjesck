@@ -3,10 +3,10 @@
 @section('contenu')
 
 <!-- Start Page Title Area -->
-<div class="page-title-area bg-6">
+<div class="page-title-area bg-1">
     <div class="container">
         <div class="page-title-content">
-            <h2>Blog</h2>
+            <h2>Nos Réalisations</h2>
 
             <ul>
                 <li>
@@ -15,7 +15,7 @@
                     </a>
                 </li>
 
-                <li class="active">Blog</li>
+                <li class="active">Nos Réalisations</li>
             </ul>
         </div>
     </div>
@@ -56,7 +56,7 @@
 
                                         <p>{{ Str::limit($post->description, 100, ' ...') }}</p>
 
-                                        <a href="blog-details.html" class="default-btn">
+                                        <a href="{{route('realisations.show', $post->slug)}}" class="default-btn">
                                             Voir plus
                                         </a>
                                     </div>
@@ -107,13 +107,13 @@
                         <h3 class="widget-title">Autres Travaux </h3>
                         
                         <ul>
-                            @foreach ($posts as $post)
+                            @foreach ($posts as $pst)
                                 <li>
-                                    <a href="blog-details.html">
-                                        {{ $post->titre }} <br> {{ Str::limit($post->description, 20, ' ...') }}
-                                        <img src="assets/images/blog/blog-4.jpg" alt="Image">
+                                    <a href="{{route('realisations.show', $pst->slug)}}">
+                                        {{ $pst->titre }} <br> {{ Str::limit($pst->description, 20, ' ...') }}
+                                        <img src="{{asset($pst->img)}}" alt="Image">
                                     </a>
-                                    <span> {{ $post->date }} </span>
+                                    <span> {{ $pst->date }} </span>
                                 </li>
                             @endforeach
                         </ul>
