@@ -110,57 +110,99 @@
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
-                            <li class="nav-item">
-                                <a href="{{route('accueil')}}" class="nav-link {{ Route::currentRouteName() == "accueil" ? "active" : '' }}">
-                                    Accueil
-                                </a>
-                            </li>
+                            {{-- {{dd(Auth::check())}} --}}
+                            @if (! is_null(auth()->user())) 
 
-                            <li class="nav-item">
-                                <a href="{{route('realisations')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
-                                    Nos réalisations
-                                </a>
-                            </li>
+                                <li class="nav-item">
+                                        <a href="{{route('accueil')}}" class="nav-link {{ Route::currentRouteName() == "accueil" ? "active" : '' }}">
+                                            Accueil
+                                        </a>
+                                    </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link {{ Route::currentRouteName() == "apropos" ? "active" : '' }}">
-                                    Dyjesck SA
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </a>
-
-                                <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="{{route('domaines')}}" class="nav-link">Domaines d’interventions</a>
+                                        <a href="{{route('realisations')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
+                                            Nos réalisations
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link {{ Route::currentRouteName() == "apropos" ? "active" : '' }}">
+                                            Dyjesck SA
+                                            <i class="ri-arrow-down-s-line"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="{{route('domaines')}}" class="nav-link">Domaines d’interventions</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="{{route('equipe')}}" class="nav-link">Notre equipe</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="{{route('apropos')}}" class="nav-link">Qui somme nous ?</a>
+                                            </li>
+                                            {{-- <li class="nav-item">
+                                                <a href="{{route('pouquoiNous')}}" class="nav-link">Pourquoi nous choisir ?</a>
+                                            </li> --}}
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{route('equipe')}}" class="nav-link">Notre equipe</a>
+                                        <a href="{{route('contact')}}" class="nav-link {{ Route::currentRouteName() == "contact" ? "active" : '' }}">Contact</a>
                                     </li>
+
+
                                     <li class="nav-item">
-                                        <a href="{{route('apropos')}}" class="nav-link">Qui somme nous ?</a>
+                                        <a href="{{route('categorie.create')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
+                                            Catégorie
+                                        </a>
                                     </li>
-                                    {{-- <li class="nav-item">
-                                        <a href="{{route('pouquoiNous')}}" class="nav-link">Pourquoi nous choisir ?</a>
-                                    </li> --}}
-                                </ul>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a href="{{route('contact')}}" class="nav-link {{ Route::currentRouteName() == "contact" ? "active" : '' }}">Contact</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a href="{{route('categorie.create')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
-                                    Catégorie
-                                </a>
-                            </li>
+
+                                    <li class="nav-item">
+                                        <a href="{{route('post.create')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
+                                            Nouvelle réalisation
+                                        </a>
+                                    </li>
+
+                            @else 
 
                             <li class="nav-item">
-                                <a href="{{route('post.create')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
-                                    Nouvelle réalisation
-                                </a>
-                            </li>
-                            
-                            
+                                        <a href="{{route('accueil')}}" class="nav-link {{ Route::currentRouteName() == "accueil" ? "active" : '' }}">
+                                            Accueil
+                                        </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="{{route('realisations')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
+                                        Nos réalisations
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Route::currentRouteName() == "apropos" ? "active" : '' }}">
+                                        Dyjesck SA
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="{{route('domaines')}}" class="nav-link">Domaines d’interventions</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="{{route('equipe')}}" class="nav-link">Notre equipe</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="{{route('apropos')}}" class="nav-link">Qui somme nous ?</a>
+                                        </li>
+                                        {{-- <li class="nav-item">
+                                            <a href="{{route('pouquoiNous')}}" class="nav-link">Pourquoi nous choisir ?</a>
+                                        </li> --}}
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('contact')}}" class="nav-link {{ Route::currentRouteName() == "contact" ? "active" : '' }}">Contact</a>
+                                </li>
+                                    
+                            @endif
                         </ul>
 
                         <div class="others-options">
