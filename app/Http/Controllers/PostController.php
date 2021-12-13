@@ -7,6 +7,7 @@ use App\Models\Post;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Validator;
 
 class PostController extends Controller
@@ -159,12 +160,120 @@ class PostController extends Controller
     {
         return view('post.single', compact('post'));
     }
+    public function fromupdate(Post $post)
+    {
+        $categories=Categorie::all();
+        return view('post.update', compact('post','categories'));
+    }
 
     public function categorie($slug){
         $categories = Categorie::all();
         $categorie = Categorie::where('slug', $slug)->first();
         $posts = $categorie->posts()->paginate(4);
-        
+
         return view('realisations', compact('posts', 'categories'));
+    }
+
+
+    public function update(Request $request, $id){
+
+        $epingle = false;
+
+        if ($request->epingle) {
+            $epingle = true;
+        }
+
+        $validator = Validator::make($request->all(), [
+            'titre' => 'required|min:3',
+            'description' => 'required|min:10',
+            'date' => 'nullable',
+            'categ' => 'required',
+            'epingle' => 'nullable',
+            'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:15000',
+            'imga' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:15000',
+            'imgb' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:15000',
+            'imgc' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:15000',
+        ],[
+            'required' => 'Ce champ est obligatoir',
+            'min' => 'Le contenu de ce champ est trop court'
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('post')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        $post = Post::find($id);
+        $post->titre = $request->input('titre');
+        $post->slug = Str::slug($request->titre);
+        $post->description = $request->input('description');
+        $post->date = $request->input('date');
+        $post->categorie_id = $request->input('categ');
+        $post->user_id = auth()->user()->id;
+        $post->epingle = $epingle;
+
+        if($request->hasfile('img'))
+        {
+            $destination = $post->img;
+            if(File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $image = $request->file('img');
+            $input['img'] = date('Y_m_d-H:i:s').'_'.$request->titre.'_img'.'.'.$image->getClientOriginalExtension();
+            $destinationPath = public_path('/postimage');
+            $image->move($destinationPath, $input['img']);
+            $imgsize='postimage/'.$input['img'];
+            $post->img=$imgsize;
+        }
+
+        if($request->hasfile('img2'))
+        {
+            $destination = $post->img;
+            if(File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $image2 = $request->file('img2');
+            $input['img2'] = date('Y_m_d-H:i:s').'_'.$request->titre.'_img2'.'.'.$image2->getClientOriginalExtension();
+            $destinationPath = public_path('/postimage');
+            $image2->move($destinationPath, $input['img2']);
+            $img2size='postimage/'.$input['img2'];
+            $post->img=$img2size;
+        }
+
+        if($request->hasfile('img3'))
+        {
+            $destination = $post->img;
+            if(File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $image3 = $request->file('img3');
+            $input['img3'] = date('Y_m_d-H:i:s').'_'.$request->titre.'_img3'.'.'.$image3->getClientOriginalExtension();
+            $destinationPath = public_path('/postimage');
+            $image3->move($destinationPath, $input['img3']);
+            $img3size='postimage/'.$input['img3'];
+            $post->img=$img3size;
+        }
+
+        if($request->hasfile('img4'))
+        {
+            $destination = $post->img;
+            if(File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $image4 = $request->file('img4');
+            $input['img4'] = date('Y_m_d-H:i:s').'_'.$request->titre.'_img4'.'.'.$image4->getClientOriginalExtension();
+            $destinationPath = public_path('/postimage');
+            $image4->move($destinationPath, $input['img4']);
+            $img4size='postimage/'.$input['img4'];
+            $post->img=$img4size;
+        }
+
+        $post->update();
+        return redirect()->back()->with('status','post update Successfully');
     }
 }
