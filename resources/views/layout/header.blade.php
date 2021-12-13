@@ -52,13 +52,13 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <div class="navbar-option-item navbar-option-language dropdown language-option"> 
+                                    <div class="navbar-option-item navbar-option-language dropdown language-option">
                                         <button class="dropdown-toggle" type="button" id="language1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="ri-global-line"></i>
                                             <span class="lang-name">English</span>
                                         </button>
 
-                                        <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language1"> 
+                                        <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language1">
                                             <a class="dropdown-item" href="#">
                                                 <img src="assets/images/language/english.png" alt="Image">
                                                 English
@@ -100,7 +100,7 @@
             </div>
         </div>
 
-        
+
         <div class="desktop-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
@@ -111,7 +111,7 @@
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
                             {{-- {{dd(Auth::check())}} --}}
-                            @if (! is_null(auth()->user())) 
+                            @if (! is_null(auth()->user()))
 
                                 <li class="nav-item">
                                         <a href="{{route('accueil')}}" class="nav-link {{ Route::currentRouteName() == "accueil" ? "active" : '' }}">
@@ -158,12 +158,20 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="{{route('post.create')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
+                                        <a href="" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
                                             Nouvelle réalisation
                                         </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="{{route('post.create')}}" class="nav-link">Creation</a>
+                                            </li>
+                                            {{-- <li class="nav-item">
+                                                <a href="{{route('post.update')}}" class="nav-link">Mis a jour</a>
+                                            </li> --}}
+                                        </ul>
                                     </li>
 
-                            @else 
+                            @else
 
                             <li class="nav-item">
                                         <a href="{{route('accueil')}}" class="nav-link {{ Route::currentRouteName() == "accueil" ? "active" : '' }}">
@@ -172,9 +180,17 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="{{route('realisations')}}" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
+                                    <a href="" class="nav-link {{ Route::currentRouteName() == "realisations" ? "active" : '' }}">
                                         Nos réalisations
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="{{route('post.create')}}" class="nav-link">Creation</a>
+                                        </li>
+                                        {{-- <li class="nav-item">
+                                            <a href="{{route('post.from')}}" class="nav-link">Mis a jour</a>
+                                        </li> --}}
+                                    </ul>
                                 </li>
 
                                 <li class="nav-item">
@@ -201,7 +217,7 @@
                                 <li class="nav-item">
                                     <a href="{{route('contact')}}" class="nav-link {{ Route::currentRouteName() == "contact" ? "active" : '' }}">Contact</a>
                                 </li>
-                                    
+
                             @endif
                         </ul>
 
