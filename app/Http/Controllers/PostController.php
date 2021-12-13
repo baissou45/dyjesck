@@ -19,7 +19,6 @@ class PostController extends Controller
 
     public function index(){
         $posts = Post::take(5)->get();
-
         return view('post.index', compact('posts'));
     }
 
