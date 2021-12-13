@@ -115,7 +115,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single-services-two">
 						<a href="#">
-							<img src="{{asset('dysj/batiment.jpg')}}" alt="Image" height="100" height="100">
+							<img src="{{asset('dysj/batiment.jpg')}}" alt="Image" style="height: 200px">
 						</a>
 						<h3><a href="#">BÂTIMENT</a></h3>
 						<p>
@@ -128,7 +128,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single-services-two">
 						<a href="#">
-							<img src="{{asset('dysj/revetement.jpg')}}" alt="Image" height="100" height="100">
+							<img src="{{asset('dysj/revetement.jpg')}}" alt="Image" style="height: 200px">
 						</a>
 						<h3><a href="#">REVÊTEMENT</a></h3>
 						<p>
@@ -140,7 +140,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single-services-two">
 						<a href="#">
-							<img src="{{asset('dysj/pavage.jpg')}}" alt="Image" height="100" height="100">
+							<img src="{{asset('dysj/pavage.jpg')}}" alt="Image" style="height: 200px">
 						</a>
 						<h3><a href="#">PAVAGE ET ASSAINISSEMENT</a></h3>
 						<p>
@@ -152,7 +152,7 @@
 				<div class="col-lg-3 col-md-6">	
 					<div class="single-services-two">
 						<a href="#">
-							<img src="{{asset('dysj/adduction.jpg')}}" alt="Image" height="100" height="100">
+							<img src="{{asset('dysj/adduction.jpg')}}" alt="Image" style="height: 200px">
 						</a>
 						<h3>
 							<a href="#">ADDUCTION D'EAU</a>
@@ -166,61 +166,6 @@
 		</div>
 	</section>
 	<!-- End Our Services Area -->
-
-	<!-- Start Offer Area -->
-		{{-- <section class="offer-area pt-100 pb-70">
-			<div class="container">
-				<div class="section-title">
-					<span class="top-title">What we offer</span>
-					<h2>We serve any work very quickly at a low price</h2>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6">
-						<div class="single-offer-shape-three">
-							<div class="offer-icon">
-								<img src="assets/images/offer-shape.png" alt="Image">
-								<div class="icon">
-									<img src="assets/images/icon/icon-6.png" alt="Image">
-								</div>
-							</div>
-
-							<h3>Fast service</h3>
-							<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="single-offer-shape-three">
-							<div class="offer-icon">
-								<img src="assets/images/offer-shape.png" alt="Image">
-								<div class="icon">
-									<img src="assets/images/icon/icon-7.png" alt="Image">
-								</div>
-							</div>
-
-							<h3>Affordable price</h3>
-							<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="single-offer-shape-three">
-							<div class="offer-icon">
-								<img src="assets/images/offer-shape.png" alt="Image">
-								<div class="icon">
-									<img src="assets/images/icon/icon-8.png" alt="Image">
-								</div>
-							</div>
-
-							<h3>24/7 Supports</h3>
-							<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> --}}
-	<!-- End Offer Area -->
 
 	<!-- Start Our Project Area -->
 	<section class="our-project-area mt-5">
