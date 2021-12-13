@@ -44,11 +44,11 @@ hero Slider Area Style
 }
 
 .hero-slider-area:hover .owl-theme .owl-nav .owl-prev i {
-  color: var(--main-color);
+  color: #D90115;
 }
 
 .hero-slider-area:hover .owl-theme .owl-nav .owl-next i {
-  color: var(--main-color);
+  color: #D90115;
 }
 
 .hero-slider-area .owl-carousel .owl-item img {
@@ -272,10 +272,10 @@ hero Slider Area Style
     margin: 3px;
   }
   .hero-slider-area:hover .owl-theme .owl-nav .owl-prev i {
-    color: var(--main-color);
+    color: #D90115;
   }
   .hero-slider-area:hover .owl-theme .owl-nav .owl-next i {
-    color: var(--main-color);
+    color: #D90115;
   }
 }
 /*# sourceMappingURL=hero-slider.css.map */

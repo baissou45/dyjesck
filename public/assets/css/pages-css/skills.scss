@@ -4,7 +4,7 @@ Skill Area Style
 .skills-content {
 	margin-right: 30px;
 	.top-title {
-		color: var(--main-color);
+		color: #0131b4;
         font-size: 16px;
         margin-bottom: 10px;
         display: block;
@@ -54,7 +54,7 @@ Skill Area Style
         font-family: var(--body-font-family);
 	}
 	.down-arrow {
-		border: 1px solid var(--main-color);
+		border: 1px solid #0131b4;
 		position: absolute;
 		left: 50%;
 		top: 88%;
@@ -68,7 +68,7 @@ Skill Area Style
 	}
 	.progress-content {
 		height: 2px;
-		background-color: var(--main-color);
+		background-color: #0131b4;
 		width: 0%;
 	}
     &.color-change {

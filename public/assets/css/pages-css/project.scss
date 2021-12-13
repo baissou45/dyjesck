@@ -42,7 +42,7 @@
             .project-content { 
                 h3 {
                     a {
-                        color: var(--main-color);
+                        color: #0131b4;
                     }
                 }
             }
@@ -94,21 +94,21 @@
             line-height: 1;
             .owl-dot {
                 span {
-                    border: 1px solid var(--main-color);
+                    border: 1px solid #0131b4;
                 }
                 &:hover {
                     span {
-                        border-color: var(--main-color);
+                        border-color: #0131b4;
                         &::before {
-                            background-color: var(--main-color);
+                            background-color: #0131b4;
                         }
                     }
                 }
                 &.active {
                     span {
-                        border-color: var(--main-color);
+                        border-color: #0131b4;
                         &::before {
-                            background-color: var(--main-color);
+                            background-color: #0131b4;
                              
                         }
                     }

@@ -108,7 +108,7 @@ Page Title Area Style
 }
 
 .page-title-area .page-title-content ul li.active {
-  color: var(--main-color);
+  color: #D90115;
 }
 
 .page-title-area .page-title-content ul li:first-child {
@@ -128,7 +128,7 @@ Page Title Area Style
 }
 
 .page-title-area .page-title-content ul li a:hover {
-  color: var(--main-color);
+  color: #D90115;
 }
 
 /* Max width 767px */

@@ -64,7 +64,7 @@
 }
 
 .single-services-two:hover h3 a {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .section-title h3 {
@@ -90,7 +90,7 @@
 }
 
 .single-services-three:hover a {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 /* Max width 767px */

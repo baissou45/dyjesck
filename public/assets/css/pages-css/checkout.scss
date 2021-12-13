@@ -17,7 +17,7 @@ Checkout Area Style
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                background-color: var(--main-color);
+                background-color: #0131b4;
                 width: 150px;
                 height: 3px;
             }
@@ -56,7 +56,7 @@ Checkout Area Style
 						padding-left: 20px;
 						padding-right: 20px;
 						&:hover {
-							background-color: var(--main-color) !important;
+							background-color: #0131b4 !important;
 							color: var(--white-color);
 						}
 					}
@@ -69,7 +69,7 @@ Checkout Area Style
 				}
 			}
 			.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-				background-color: var(--main-color) !important;
+				background-color: #0131b4 !important;
 				color: var(--white-color) !important;
 			}
 			textarea {
@@ -110,7 +110,7 @@ Checkout Area Style
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                background-color: var(--main-color);
+                background-color: #0131b4;
                 width: 150px;
                 height: 3px;
             }
@@ -152,7 +152,7 @@ Checkout Area Style
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                background-color: var(--main-color);
+                background-color: #0131b4;
                 width: 150px;
                 height: 3px;
             }
@@ -181,10 +181,10 @@ Checkout Area Style
                 background: none;
 				&.active {
 					&::after {
-						background-color: var(--main-color);
+						background-color: #0131b4;
 					}
 					&::before {
-						border-color: var(--main-color);
+						border-color: #0131b4;
 					}
 				}
 				&::before {
@@ -210,7 +210,7 @@ Checkout Area Style
 					border-radius: 50%;
 				}
 				&:hover {
-					color: var(--main-color);
+					color: #0131b4;
 				}
 			}
 			.accordion-item {
@@ -224,9 +224,9 @@ Checkout Area Style
 			label {
 				margin-bottom: 5px;
 				a {
-					color: var(--main-color);
+					color: #0131b4;
 					&:hover {
-						color: var(--main-color);
+						color: #0131b4;
 					}
 				}
 			}

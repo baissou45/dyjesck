@@ -19,7 +19,7 @@ Contact Area CSS
             left: 0;
             width: 60px;
             height: 3px;
-            background-color: var(--main-color);
+            background-color: #0131b4;
         }
 	}
 	.address {
@@ -55,7 +55,7 @@ Contact Area CSS
 				color: var(--body-color);
 				display: block;
 				&:hover {
-					color: var(--main-color);
+					color: #0131b4;
 				}
 			}
 			&:last-child {
@@ -109,7 +109,7 @@ Main Contact Area Style
             left: 0;
             width: 60px;
             height: 3px;
-            background-color: var(--main-color);
+            background-color: #0131b4;
         }
     }
 	.form-group {
@@ -124,7 +124,7 @@ Main Contact Area Style
             transition: var(--transition);
 			border-color: #e8e8e8;
             &:focus {
-                border-color: var(--main-color);
+                border-color: #0131b4;
             }
 			&::placeholder {
 				color: #6b7c93;
@@ -140,7 +140,7 @@ Main Contact Area Style
 			p {
 				padding-left: 20px;
 				a {
-					color: var(--main-color);
+					color: #0131b4;
 					&:hover {
 						color: var(--heading-color);
 					}

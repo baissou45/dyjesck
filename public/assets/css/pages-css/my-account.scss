@@ -22,7 +22,7 @@ User Area CSS
 				left: 0;
 				width: 150px;
 				height: 3px;
-				background-color: var(--main-color);
+				background-color: #0131b4;
 			}
 		}
 		.user-form {
@@ -45,7 +45,7 @@ User Area CSS
 						font-size: 16px;
 					}
 					a {
-						color: var(--main-color);
+						color: #0131b4;
 					}
 				}
 				.forgot-login {
@@ -106,9 +106,9 @@ User Area CSS
 				}
 			}
 			&:hover {
-				background-color: var(--main-color);
+				background-color: #0131b4;
 				color: var(--white-color);
-				border-color: var(--main-color);
+				border-color: #0131b4;
 				i {
 					color: var(--white-color);
 				}
@@ -118,7 +118,7 @@ User Area CSS
 			text-align: center;
 			font-size: 16px;
 			a {
-				color: var(--main-color);
+				color: #0131b4;
 			}
 		}
 		&.log-in-width {

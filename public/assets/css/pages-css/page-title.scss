@@ -86,7 +86,7 @@ Page Title Area Style
 					transform: rotate(15deg)
 				}
 				&.active {
-					color: var(--main-color);
+					color: #D90115;
 				}
 				&:first-child {
 					margin-left: 0;
@@ -100,7 +100,7 @@ Page Title Area Style
 				a {
 					color: var(--white-color);
 					&:hover {
-						color: var(--main-color);
+						color: #D90115;
 					}
 				}
 			}

@@ -20,7 +20,7 @@
   font-size: 300px;
   line-height: 1;
   font-weight: 700;
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .error-area .error-content h1 .a {
@@ -47,7 +47,7 @@
 .error-area .error-content p {
   margin: 20px 0 20px;
   font-size: 19px;
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 /*

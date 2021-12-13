@@ -11,7 +11,7 @@ Product Details Area Style
 
 .product-details-area .product-details-desc .price {
   margin-bottom: 22px;
-  color: var(--main-color);
+  color: #0131b4;
   font-size: 20px;
   font-weight: 500;
 }
@@ -91,7 +91,7 @@ Product Details Area Style
 }
 
 .product-details-area .product-details-desc .product-add-to-cart .input-counter span:hover {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .product-details-area .product-details-desc .product-add-to-cart .input-counter span.minus-btn {
@@ -175,7 +175,7 @@ Product Details Area Style
   left: 0;
   width: 0;
   height: 100%;
-  background-color: var(--main-color);
+  background-color: #0131b4;
   z-index: -1;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -277,11 +277,11 @@ Product Details Area Style
 }
 
 .product-details-area .product-details-tab .tabs li:hover {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .product-details-area .product-details-tab .tabs li.current {
-  color: var(--main-color);
+  color: #0131b4;
   position: relative;
 }
 
@@ -292,7 +292,7 @@ Product Details Area Style
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: var(--main-color);
+  background-color: #0131b4;
 }
 
 .product-details-area .product-details-tab .tab_content {
@@ -379,7 +379,7 @@ Product Details Area Style
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   border: 4px;
-  background-color: var(--main-color);
+  background-color: #0131b4;
 }
 
 .product-details-area .product-details-tab .tab_content .tabs_item .product-details-tab-content .product-review-form .review-comments {
