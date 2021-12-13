@@ -6,9 +6,8 @@ use App\Models\Categorie;
 use App\Models\Post;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-// use Intervention\Image\Facades\Image;
+use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Validator;
-// use Illuminate\Validation\Validator;
 
 class PostController extends Controller
 {

@@ -33,19 +33,19 @@
 
                     
                     <div class="blog-details-img">
-                        <img src="{{asset('assets/images/blog/blog-1.jpg')}}" alt="Image">
+                        <img src="{{asset($post->img)}}" alt="Image">
                         <span class="date">May <br> 03</span>
                     </div>
 
                     <div class="row">
                         <div class="col-4">
-                            <img src="{{asset('assets/images/blog/blog-1.jpg')}}" alt="Image">
+                            <img src="{{asset($post->img2)}}" alt="Image">
                         </div>
                         <div class="col-4">
-                            <img src="{{asset('assets/images/blog/blog-1.jpg')}}" alt="Image">
+                            <img src="{{asset($post->img3)}}" alt="Image">
                         </div>
                         <div class="col-4">
-                            <img src="{{asset('assets/images/blog/blog-1.jpg')}}" alt="Image">
+                            <img src="{{asset($post->img4)}}" alt="Image">
                         </div>
                     </div>
 
@@ -233,23 +233,14 @@
                         <h3 class="widget-title">Autres Travaux </h3>
                         
                         <ul>
-                            @php
-                                $i = 0;
-                            @endphp
-                            @foreach ($posts as $post)
+                            @foreach ($posts as $pst)
                                 <li>
-                                    <a href="blog-details.html">
-                                        {{ $post->titre }} <br> {{ Str::limit($post->description, 20, ' ...') }}
-                                        <img src="assets/images/blog/blog-4.jpg" alt="Image">
+                                    <a href="{{route('realisations.show', $pst->slug)}}">
+                                        {{ $pst->titre }} <br> {{ Str::limit($pst->description, 20, ' ...') }}
+                                        <img src="{{asset($pst->img)}}" alt="Image">
                                     </a>
-                                    <span> {{ $post->date }} </span>
+                                    <span> {{ $pst->date }} </span>
                                 </li>
-                                @php
-                                    $i++ ;
-                                    if ( $i > 3 ) {
-                                        break;
-                                    }
-                                @endphp
                             @endforeach
                         </ul>
                     </div>
