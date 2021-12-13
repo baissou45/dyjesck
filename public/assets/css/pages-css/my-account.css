@@ -29,7 +29,7 @@ User Area CSS
   left: 0;
   width: 150px;
   height: 3px;
-  background-color: var(--main-color);
+  background-color: #0131b4;
 }
 
 .user-area .user-form-content .user-form .form-group {
@@ -59,7 +59,7 @@ User Area CSS
 }
 
 .user-area .user-form-content .user-form .login-action .log-rem a {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .user-area .user-form-content .user-form .login-action .forgot-login {
@@ -125,9 +125,9 @@ User Area CSS
 }
 
 .user-area .user-form-content .or-login:hover {
-  background-color: var(--main-color);
+  background-color: #0131b4;
   color: var(--white-color);
-  border-color: var(--main-color);
+  border-color: #0131b4;
 }
 
 .user-area .user-form-content .or-login:hover i {
@@ -140,7 +140,7 @@ User Area CSS
 }
 
 .user-area .user-form-content .create a {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .user-area .user-form-content.log-in-width {

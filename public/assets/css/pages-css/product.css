@@ -104,11 +104,11 @@
   text-align: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .single-product .product-images ul li a:hover i, .single-product .product-images ul li button:hover i {
-  background-color: var(--main-color);
+  background-color: #0131b4;
   color: var(--white-color);
 }
 
@@ -121,7 +121,7 @@
 }
 
 .single-product .product-content span {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .single-product .product-content span del {
@@ -141,7 +141,7 @@
 }
 
 .single-product:hover .product-content h3 a {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .single-product.style-border img {

@@ -63,20 +63,20 @@ Navbar Area Style
         .desktop-nav .navbar .navbar-nav .nav-item a {
             color: var(--white-color);
             &:hover {
-                color: var(--main-color);
+                color: #0131b4;
             }
             &.active {
-                color: var(--main-color);
+                color: #0131b4;
             }
         }
         .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
             color: var(--heading-color) !important;
 
             &:hover {
-                color: var(--main-color) !important;
+                color: #0131b4 !important;
             }
             &.active {
-                color: var(--main-color) !important;
+                color: #0131b4 !important;
             }
         }
         .desktop-nav .navbar .others-options ul li a i {
@@ -194,7 +194,7 @@ Navbar Area Style
                         right: 20px;
                     };
                     &:hover, &:focus, &.active {
-                        color: var(--main-color);
+                        color: #0131b4;
                     }
                     i {
 						font-size: 18px;
@@ -215,7 +215,7 @@ Navbar Area Style
                 }
                 &:hover, &:focus, &.active {
                     a {
-                        color: var(--main-color);
+                        color: #0131b4;
                     }
                 }
                 .dropdown-menu {
@@ -254,7 +254,7 @@ Navbar Area Style
 								top: 7px;
 							}
                             &:hover, &:focus, &.active {
-                                color: var(--main-color);
+                                color: #0131b4;
                             }
                         }
                         .dropdown-menu {
@@ -270,7 +270,7 @@ Navbar Area Style
 									font-size: 14px;
 									line-height: 1;
                                     &:hover, &:focus, &.active {
-                                        color: var(--main-color);
+                                        color: #0131b4;
                                     }
                                 }
                                 .dropdown-menu {
@@ -283,7 +283,7 @@ Navbar Area Style
                                         a {
                                             color: var(--black-color);
                                             &:hover, &:focus, &.active {
-                                                color: var(--main-color);
+                                                color: #0131b4;
                                             }
                                         }
                                         .dropdown-menu {
@@ -296,7 +296,7 @@ Navbar Area Style
                                                     color: var(--black-color);
                                                     
                                                     &:hover, &:focus, &.active {
-                                                        color: var(--main-color);
+                                                        color: #0131b4;
                                                     }
                                                 }
                                                 .dropdown-menu {
@@ -309,7 +309,7 @@ Navbar Area Style
                                                             color: var(--black-color);
                                                             
                                                             &:hover, &:focus, &.active {
-                                                                color: var(--main-color);
+                                                                color: #0131b4;
                                                             }
                                                         }
                                                         .dropdown-menu {
@@ -322,7 +322,7 @@ Navbar Area Style
                                                                     color: var(--black-color);
                                                                     
                                                                     &:hover, &:focus, &.active {
-                                                                        color: var(--main-color);
+                                                                        color: #0131b4;
                                                                     }
                                                                 }
                                                                 .dropdown-menu {
@@ -334,14 +334,14 @@ Navbar Area Style
                                                                         a {
                                                                             color: var(--black-color);
                                                                             &:hover, &:focus, &.active {
-                                                                                color: var(--main-color);
+                                                                                color: #0131b4;
                                                                             }
                                                                         }
                                                                     }
                                                                 }
                                                                 &.active {
                                                                     a {
-                                                                        color: var(--main-color);
+                                                                        color: #0131b4;
                                                                     }
                                                                 }
                                                                 &:hover {
@@ -355,7 +355,7 @@ Navbar Area Style
                                                         }
                                                         &.active {
                                                             a {
-                                                                color: var(--main-color);
+                                                                color: #0131b4;
                                                             }
                                                         }
                                                         &:hover {
@@ -369,7 +369,7 @@ Navbar Area Style
                                                 }
                                                 &.active {
                                                     a {
-                                                        color: var(--main-color);
+                                                        color: #0131b4;
                                                     }
                                                 }
                                                 &:hover {
@@ -383,7 +383,7 @@ Navbar Area Style
                                         }
                                         &.active {
                                             a {
-                                                color: var(--main-color);
+                                                color: #0131b4;
                                             }
                                         }
                                         &:hover {
@@ -397,7 +397,7 @@ Navbar Area Style
                                 }
                                 &.active {
                                     a {
-                                        color: var(--main-color);
+                                        color: #0131b4;
                                     }
                                 }
                                 &:hover {
@@ -411,7 +411,7 @@ Navbar Area Style
                         }
                         &.active {
                             a {
-                                color: var(--main-color);
+                                color: #0131b4;
                             }
                         }
                         &:hover {
@@ -471,7 +471,7 @@ Navbar Area Style
                             height: 12px;
                             line-height: 12px;
                             text-align: center;
-                            background-color: var(--main-color);
+                            background-color: #0131b4;
                             border-radius: 50%;
                             color: var(--white-color);
                         }
@@ -544,11 +544,11 @@ Navbar Area Style
                                     margin-right: 10px;
                                 }
                                 &:hover {
-                                    color: var(--main-color);
+                                    color: #0131b4;
                                     background-color: transparent;
                                 }
                                 &:focus {
-                                    color: var(--main-color);
+                                    color: #0131b4;
                                     background-color: transparent;
                                 }
                             }
@@ -576,7 +576,7 @@ Navbar Area Style
                             position: absolute;
                             top: 18px;
                             left: 50px;
-                            background-color: var(--main-color);
+                            background-color: #0131b4;
                             height: 50px;
                             width: 50px;
                             line-height: 50px;
@@ -625,13 +625,13 @@ Others Option For Responsive Area Style
 				border-radius: 100%;
 				margin: 0 2px;
 				transition: var(--transition);
-				background-color: var(--main-color);
+				background-color: #0131b4;
 			}
 		}
 		&:hover {
 			.inner {
 				.circle {
-					background-color: var(--main-color);
+					background-color: #0131b4;
 				}
 			}
 		}
@@ -690,7 +690,7 @@ Others Option For Responsive Area Style
                         height: 12px;
                         line-height: 12px;
                         text-align: center;
-                        background-color: var(--main-color);
+                        background-color: #0131b4;
                         border-radius: 50%;
                         color: var(--white-color);
                     }
@@ -759,11 +759,11 @@ Others Option For Responsive Area Style
                                 margin-right: 10px;
                             }
                             &:hover {
-                                color: var(--main-color);
+                                color: #0131b4;
                                 background-color: transparent;
                             }
                             &:focus {
-                                color: var(--main-color);
+                                color: #0131b4;
                                 background-color: transparent;
                             }
                         }
@@ -791,7 +791,7 @@ Others Option For Responsive Area Style
                         position: absolute;
                         top: 18px;
                         left: 50px;
-                        background-color: var(--main-color);
+                        background-color: #0131b4;
                         height: 50px;
                         width: 50px;
                         line-height: 50px;
@@ -865,7 +865,7 @@ Navbar Responsive Area Style
                                     };
                                 }
                                 &.active {
-                                    color: var(--main-color);
+                                    color: #0131b4;
                                 }
                             }
                             li {
@@ -908,9 +908,9 @@ Navbar Responsive Area Style
                     width: 35px;
                     height: 30px;
                     padding-top: 7px;
-                    color: var(--main-color);
+                    color: #0131b4;
                     span {
-                        background: var(--main-color);
+                        background: #0131b4;
                         height: 4px;
                         margin-top: -6px;
                         border-radius: 0;

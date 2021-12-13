@@ -21,7 +21,7 @@ Book Online Area Style
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var(--main-color);
+  background-color: #0131b4;
   width: 150px;
   height: 3px;
 }
@@ -73,7 +73,7 @@ Book Online Area Style
 }
 
 .book-online .form-group .nice-select .list .option:hover {
-  background-color: var(--main-color) !important;
+  background-color: #0131b4 !important;
   color: var(--white-color);
 }
 
@@ -86,7 +86,7 @@ Book Online Area Style
 }
 
 .book-online .form-group .nice-select .option:hover, .book-online .form-group .nice-select .option.focus, .book-online .form-group .nice-select .option.selected.focus {
-  background-color: var(--main-color) !important;
+  background-color: #0131b4 !important;
   color: var(--white-color) !important;
 }
 

@@ -33,7 +33,7 @@
                     }
                 }
                 &:hover {
-                    color: var(--main-color);
+                    color: #0131b4;
                 }
             }
         }
@@ -68,13 +68,13 @@
                         height: 12px;
                         line-height: 12px;
                         text-align: center;
-                        background-color: var(--main-color);
+                        background-color: #0131b4;
                         border-radius: 50%;
                         color: var(--white-color);
                     }
                     &:hover {
                        i {
-                        color: var(--main-color);
+                        color: #0131b4;
                        }
                     }
                 }
@@ -147,11 +147,11 @@
                                 margin-right: 10px;
                             }
                             &:hover {
-                                color: var(--main-color);
+                                color: #0131b4;
                                 background-color: transparent;
                             }
                             &:focus {
-                                color: var(--main-color);
+                                color: #0131b4;
                                 background-color: transparent;
                             }
                         }
@@ -179,7 +179,7 @@
                         position: absolute;
                         top: 18px;
                         left: 50px;
-                        background-color: var(--main-color);
+                        background-color: #0131b4;
                         height: 50px;
                         width: 50px;
                         line-height: 50px;

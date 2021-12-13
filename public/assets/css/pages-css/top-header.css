@@ -43,7 +43,7 @@
 }
 
 .header-left-content ul li a:hover {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .header-right-content {
@@ -84,13 +84,13 @@
   height: 12px;
   line-height: 12px;
   text-align: center;
-  background-color: var(--main-color);
+  background-color: #0131b4;
   border-radius: 50%;
   color: var(--white-color);
 }
 
 .header-right-content .others-options ul li a:hover i {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .header-right-content .others-options ul li:last-child {
@@ -186,12 +186,12 @@
 }
 
 .header-right-content .others-options ul li .navbar-option-language .dropdown-menu .dropdown-item:hover {
-  color: var(--main-color);
+  color: #0131b4;
   background-color: transparent;
 }
 
 .header-right-content .others-options ul li .navbar-option-language .dropdown-menu .dropdown-item:focus {
-  color: var(--main-color);
+  color: #0131b4;
   background-color: transparent;
 }
 
@@ -222,7 +222,7 @@
   position: absolute;
   top: 18px;
   left: 50px;
-  background-color: var(--main-color);
+  background-color: #0131b4;
   height: 50px;
   width: 50px;
   line-height: 50px;

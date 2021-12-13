@@ -25,7 +25,7 @@ Contact Area CSS
   left: 0;
   width: 60px;
   height: 3px;
-  background-color: var(--main-color);
+  background-color: #0131b4;
 }
 
 .single-contact-info .address {
@@ -70,7 +70,7 @@ Contact Area CSS
 }
 
 .single-contact-info .address li a:hover {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .single-contact-info .address li:last-child {
@@ -127,7 +127,7 @@ Main Contact Area Style
   left: 0;
   width: 60px;
   height: 3px;
-  background-color: var(--main-color);
+  background-color: #0131b4;
 }
 
 .main-contact-area .form-group {
@@ -148,7 +148,7 @@ Main Contact Area Style
 }
 
 .main-contact-area .form-group .form-control:focus {
-  border-color: var(--main-color);
+  border-color: #0131b4;
 }
 
 .main-contact-area .form-group .form-control::-webkit-input-placeholder {
@@ -182,7 +182,7 @@ Main Contact Area Style
 }
 
 .main-contact-area .form-group.checkboxs p a {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .main-contact-area .form-group.checkboxs p a:hover {

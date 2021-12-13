@@ -14,7 +14,7 @@
 }
 
 .about-content .top-title {
-  color: var(--main-color);
+  color: #D90115;
   font-size: 15px;
   margin-bottom: 10px;
   display: block;
@@ -32,7 +32,7 @@
 .about-content .single-count h1 {
   font-size: 60px;
   margin-bottom: 5px;
-  color: var(--main-color);
+  color: #D90115;
 }
 
 .about-content .single-count h3 {

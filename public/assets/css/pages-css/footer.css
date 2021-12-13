@@ -88,7 +88,7 @@ Footer Area Style
   display: block;
   font-size: 18px;
   font-weight: 600;
-  color: var(--main-color);
+  color: #0131b4;
   margin-bottom: 5px;
   position: absolute;
   top: 0;
@@ -101,7 +101,7 @@ Footer Area Style
 }
 
 .single-footer-widget .address li a:hover {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .single-footer-widget .address li:last-child {
@@ -131,7 +131,7 @@ Footer Area Style
 }
 
 .single-footer-widget .import-link li:hover a {
-  color: var(--main-color);
+  color: #0131b4;
 }
 
 .single-footer-widget .working-time {
